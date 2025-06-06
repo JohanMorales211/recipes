@@ -1,5 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
 html, body {
   background-color: #fdf6e9;
   font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
 }

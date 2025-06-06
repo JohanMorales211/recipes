@@ -8,25 +8,13 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     {
-      slug: 'pasta-cremosa-de-tomate',
-      name: 'Pasta Cremosa de Tomate',
-      description: 'Una receta rápida y deliciosa, perfecta para una cena entre semana. La cremosidad del plato te sorprenderá.',
-      difficulty: 'Fácil',
-      servings: '4 porciones',
-      time: '30 min',
-      mainImageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC4-_v9hyk558X4HHFz1xdK4moV1ZuDDxBLTKIYmker5jp5xYrcv5utcpf2L_JUDnRweM2R6Zkfd9fuYhSxQpvsGcQ_ur6gFZXcrz-0ZG_h9GGaembvw8ZB4w7Q71EWfTJPzyvBzYto518y5kM38_OzZ1Ntv_OvkG5rl_Q7pDzas8YUg0RZtz3JtetNGFakulZWOWq-j7uxXNYOxqNWjLknK2ZrU59hEoPesuXfiXForQWDyOxhp4sIAq4Jhu1oDktgRfVPPHypDDQ',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC4-_v9hyk558X4HHFz1xdK4moV1ZuDDxBLTKIYmker5jp5xYrcv5utcpf2L_JUDnRweM2R6Zkfd9fuYhSxQpvsGcQ_ur6gFZXcrz-0ZG_h9GGaembvw8ZB4w7Q71EWfTJPzyvBzYto518y5kM38_OzZ1Ntv_OvkG5rl_Q7pDzas8YUg0RZtz3JtetNGFakulZWOWq-j7uxXNYOxqNWjLknK2ZrU59hEoPesuXfiXForQWDyOxhp4sIAq4Jhu1oDktgRfVPPHypDDQ',
-      gallery: [],
-      ingredients: ['Pasta', 'Tomates', 'Crema', 'Ajo', 'Albahaca'],
-      instructions: ['Cocina la pasta.', 'Prepara la salsa.', 'Mezcla todo.']
-    },
-    {
       slug: 'pollo-asado-con-vegetales',
-      name: 'Pollo Asado con Vegetales de Raíz',
+      name: 'Pollo Asado con Vegetales',
       description: 'Este clásico pollo asado es tierno y jugoso con piel crujiente, asado junto a una mezcla de vegetales de raíz. Los vegetales se caramelizan, absorbiendo los sabores del pollo. Un plato simple pero satisfactorio, perfecto para una cena entre semana o una reunión de fin de semana.',
       difficulty: 'Media',
       servings: '4 porciones',
       time: '90 min',
+      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCE2Je2LqhemarmXV0m8BELfbdworF8slRmoUOM2gQT3nBJO_N-GkfOSJTU4GnSSwFIPLn8tqaU7P4DVl8Ydss88yZvlJ_613CgZDZM2TMdN-3IyQDJtBtnWdTmaujRZe_LlBRRaP_VOfimurJLjIe-CSOtoJJz06HtJFkD_UsvKaPDrfs4nzLBbbG4odtVWIyIUTsyWaO87CSiXUcyYG655dpKpMq5KWLs8HMhhJbx1c5QQofA1QFd9XY-unypbW06Jeq9yLEasLY',
       mainImageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCE2Je2LqhemarmXV0m8BELfbdworF8slRmoUOM2gQT3nBJO_N-GkfOSJTU4GnSSwFIPLn8tqaU7P4DVl8Ydss88yZvlJ_613CgZDZM2TMdN-3IyQDJtBtnWdTmaujRZe_LlBRRaP_VOfimurJLjIe-CSOtoJJz06HtJFkD_UsvKaPDrfs4nzLBbbG4odtVWIyIUTsyWaO87CSiXUcyYG655dpKpMq5KWLs8HMhhJbx1c5QQofA1QFd9XY-unypbW06Jeq9yLEasLY',
       gallery: [
         'https://lh3.googleusercontent.com/aida-public/AB6AXuCbGkRbD5uQPW03z57w3YWWI1zfc38JlEDWi2pTH2g-7fKjcIrOv80mrNeZ7qEGx1uuJLu4jkhixfn_PeHrWuNY-3Do24l2pIS-J20qRWCsHux5JFiSMvECK5oDo3XMDuLzQTkLTLWE8dgI8S0QV86WnsGB9eDpMfXcursydf8SWOK_zAtDC7aL4Vnh5RYYKSVtZjsZCZJqkDf54A7hwFuzSRcjF7Ln1F2fXPAfWKEb2m1vlNCBK4wdoKG1c0dHiKAjxrSyJKrIDJQ',
@@ -41,6 +29,51 @@ export class RecipeService {
         'Precalienta el horno a 200°C (400°F).', 'En un tazón grande, mezcla los vegetales troceados con aceite de oliva, sal, pimienta, tomillo y romero.', 'Coloca los vegetales en una sola capa en una bandeja para asar grande.', 'Seca el pollo con papel de cocina. Sazona por dentro y por fuera con sal y pimienta.', 'Rellena la cavidad con el ajo picado y los cuartos de limón.', 'Coloca el pollo sobre los vegetales en la bandeja de asar.', 'Asa durante 60-75 minutos, o hasta que el pollo alcance una temperatura interna de 74°C (165°F) y los vegetales estén tiernos.', 'Deja reposar el pollo durante 10 minutos antes de trinchar.', 'Decora con perejil fresco y sirve.'
       ]
     },
+    {
+      slug: 'pasta-cremosa-de-tomate',
+      name: 'Pasta Cremosa de Tomate',
+      difficulty: 'Fácil',
+      servings: '4 porciones',
+      time: '30 min',
+      imageUrl: 'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+    },
+    {
+      slug: 'tostada-de-aguacate',
+      name: 'Tostada de Aguacate',
+      difficulty: 'Fácil',
+      servings: '1 porción',
+      time: '10 min',
+      imageUrl: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+    },
+    {
+      slug: 'salmon-al-limon',
+      name: 'Salmón al Limón y Hierbas',
+      difficulty: 'Fácil',
+      servings: '2 porciones',
+      time: '25 min',
+      imageUrl: 'https://images.pexels.com/photos/3296279/pexels-photo-3296279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+    },
+    {
+      slug: 'galletas-chocolate',
+      name: 'Galletas con Chips de Chocolate',
+      difficulty: 'Fácil',
+      servings: '24 galletas',
+      time: '20 min',
+      imageUrl: 'https://images.pexels.com/photos/2067423/pexels-photo-2067423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+    },
+    {
+      slug: 'chili-vegetariano',
+      name: 'Chili Vegetariano',
+      difficulty: 'Media',
+      servings: '6 porciones',
+      time: '60 min',
+      imageUrl: 'https://images.pexels.com/photos/5951833/pexels-photo-5951833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+    }
   ];
 
   constructor() { }
