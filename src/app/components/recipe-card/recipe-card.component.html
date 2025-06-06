@@ -1,0 +1,10 @@
+<a [routerLink]="['/receta', recipe.slug]" class="flex flex-col gap-3 pb-3 group cursor-pointer">
+  <div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl shadow-md group-hover:shadow-xl transition-shadow duration-300"
+       [style.background-image]="'url(' + recipe.imageUrl + ')'">
+  </div>
+  <div>
+    <p class="text-[#1c130d] text-base font-medium leading-normal group-hover:text-[#f37a24] transition-colors">{{ recipe.name }}</p>
+    <p class="text-[#9c6c49] text-sm font-normal leading-normal">{{ recipe.difficulty }} · {{ recipe.servings }}</p>
+    <p class="text-[#9c6c49] text-sm font-normal leading-normal">{{ recipe.time }}</p>
+  </div>
+</a>

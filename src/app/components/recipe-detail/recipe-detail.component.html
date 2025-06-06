@@ -1,0 +1,85 @@
+<div *ngIf="recipe" class="bg-[#fdf6e9] relative">
+
+  <div class="gap-4 md:gap-6 px-4 sm:px-6 flex flex-col lg:flex-row flex-1 justify-center py-5 max-w-screen-xl mx-auto">
+    
+    <div class="flex flex-col w-full lg:w-3/5 order-2 lg:order-1">
+      
+      <div class="w-full">
+        <div class="w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg mb-3">
+          <div class="w-full h-full bg-center bg-no-repeat bg-cover transition-all duration-500 ease-in-out"
+               [style.background-image]="'url(' + selectedImageUrl + ')'"
+               [style.transform]="'scale(' + (imageLoaded ? 1 : 1.1) + ')'">
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="overflow-hidden">
+            <div class="flex transition-transform duration-500 ease-in-out"
+                 [style.transform]="'translateX(-' + (carouselIndex * 25) + '%)'">
+              <div *ngFor="let imageUrl of galleryImages" class="flex-shrink-0 w-1/4 p-1.5">
+                <div (click)="selectImage(imageUrl)"
+                     class="aspect-square rounded-lg overflow-hidden cursor-pointer border-2 transition-all duration-300"
+                     [ngClass]="imageUrl === selectedImageUrl ? 'border-[#f37a24] scale-105' : 'border-transparent hover:border-gray-400'">
+                  <div class="w-full h-full bg-center bg-no-repeat bg-cover"
+                       [style.background-image]="'url(' + imageUrl + ')'">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button *ngIf="carouselIndex > 0"
+                  (click)="previousImage()"
+                  class="absolute top-1/2 -translate-y-1/2 left-0 -ml-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+          </button>
+          
+          <button *ngIf="carouselIndex < galleryImages.length - thumbnailsToShow"
+                  (click)="nextImage()"
+                  class="absolute top-1/2 -translate-y-1/2 right-0 -mr-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-8">Instrucciones</h3>
+      <div class="px-4 space-y-3">
+        <div *ngFor="let instruction of recipe.instructions; let i = index" class="flex items-start gap-4 py-2">
+          <div class="flex-shrink-0 size-7 bg-[#f4ece7] text-[#1c130d] font-bold rounded-full flex items-center justify-center">{{ i + 1 }}</div>
+          <p class="text-[#1c130d] text-base font-normal leading-relaxed pt-0.5">{{ instruction }}</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex flex-col w-full lg:w-2/5 lg:max-w-[420px] order-1 lg:order-2">
+      <div class="p-4">
+        <h1 class="text-[#1c130d] tracking-tight text-3xl md:text-4xl font-bold leading-tight">{{ recipe.name }}</h1>
+        <p class="text-[#1c130d] text-base font-normal leading-relaxed pt-4">
+          {{ recipe.description }}
+        </p>
+      </div>
+      <div class="p-4">
+        <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] pb-2">Ingredientes</h3>
+        <div class="space-y-1">
+          <label *ngFor="let ingredient of recipe.ingredients" class="flex items-center gap-x-3 py-2 cursor-pointer">
+            <input type="checkbox" class="h-5 w-5 rounded border-[#e8d9ce] border-2 bg-transparent text-[#f37a24] checked:bg-[#f37a24] focus:ring-0 focus:ring-offset-0" />
+            <p class="text-[#1c130d] text-base font-normal leading-normal">{{ ingredient }}</p>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a *ngIf="recipe" [routerLink]="['/receta', recipe.slug, 'asistente']" title="Preguntar a la IA sobre esta receta"
+      class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-16 bg-[#f37a24] rounded-full shadow-lg hover:bg-orange-500 transition-all duration-300 transform hover:scale-110">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#1c130d" viewBox="0 0 256 256">
+      <path d="M208,128a80,80,0,1,1-80-80A80.09,80.09,0,0,1,208,128Zm-8,-28a16,16,0,1,0-16-16A16,16,0,0,0,200,100Zm-64,0a16,16,0,1,0-16-16A16,16,0,0,0,136,100Zm-48-16a16,16,0,1,0,16,16A16,16,0,0,0,88,84Zm-4.88,85.19A47.8,47.8,0,0,0,128,192a47.8,47.8,0,0,0,44.88-22.81,8,8,0,1,0-14.22-7.44A32,32,0,0,1,128,176a32,32,0,0,1-30.66-21.25,8,8,0,0,0-14.22,7.44Z"></path>
+    </svg>
+  </a>
+</div>
+
+<div *ngIf="!recipe" class="text-center py-20">
+  <h2 class="text-2xl font-bold text-[#1c130d]">Receta no encontrada</h2>
+  <p class="text-[#9c6c49]">La receta que buscas no existe o ha sido movida.</p>
+  <a routerLink="/home" class="mt-4 inline-block bg-[#f37a24] text-[#1c130d] font-bold py-2 px-4 rounded-xl">Volver al inicio</a>
+</div>
