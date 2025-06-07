@@ -10,7 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.component';
 import { AiAssistantComponent } from './components/ai-assistant/ai-assistant.component';
-import { AboutComponent } from './components/about/about.component'; // <-- 1. IMPORTAR
+import { AboutComponent } from './components/about/about.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutComponent } from './components/about/about.component'; // <-- 1. I
     RecipeCardComponent,
     RecipeDetailComponent,
     AiAssistantComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

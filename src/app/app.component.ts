@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
     this.router.events.pipe(
       filter((event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
+      
       if (event.urlAfterRedirects.startsWith('/receta/')) {
         this.showHeader = false;
       } else {
