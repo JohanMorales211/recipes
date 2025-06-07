@@ -30,59 +30,29 @@ export class RecipeService {
       ]
     },
     {
-      slug: 'pasta-cremosa-de-tomate',
-      name: 'Pasta Cremosa de Tomate',
-      difficulty: 'Fácil',
-      servings: '4 porciones',
-      time: '30 min',
-      imageUrl: 'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+      slug: 'pasta-cremosa-de-tomate', name: 'Pasta Cremosa de Tomate', difficulty: 'Fácil', servings: '4 porciones', time: '30 min', imageUrl: 'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
     },
     {
-      slug: 'tostada-de-aguacate',
-      name: 'Tostada de Aguacate',
-      difficulty: 'Fácil',
-      servings: '1 porción',
-      time: '10 min',
-      imageUrl: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+      slug: 'tostada-de-aguacate', name: 'Tostada de Aguacate', difficulty: 'Fácil', servings: '1 porción', time: '10 min', imageUrl: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
     },
     {
-      slug: 'salmon-al-limon',
-      name: 'Salmón al Limón y Hierbas',
-      difficulty: 'Fácil',
-      servings: '2 porciones',
-      time: '25 min',
-      imageUrl: 'https://images.pexels.com/photos/3296279/pexels-photo-3296279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+      slug: 'salmon-al-limon', name: 'Salmón al Limón y Hierbas', difficulty: 'Fácil', servings: '2 porciones', time: '25 min', imageUrl: 'https://images.pexels.com/photos/3296279/pexels-photo-3296279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
     },
     {
-      slug: 'galletas-chocolate',
-      name: 'Galletas con Chips de Chocolate',
-      difficulty: 'Fácil',
-      servings: '24 galletas',
-      time: '20 min',
-      imageUrl: 'https://images.pexels.com/photos/2067423/pexels-photo-2067423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+      slug: 'galletas-chocolate', name: 'Galletas con Chips de Chocolate', difficulty: 'Fácil', servings: '24 galletas', time: '20 min', imageUrl: 'https://images.pexels.com/photos/2067423/pexels-photo-2067423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
     },
     {
-      slug: 'chili-vegetariano',
-      name: 'Chili Vegetariano',
-      difficulty: 'Media',
-      servings: '6 porciones',
-      time: '60 min',
-      imageUrl: 'https://images.pexels.com/photos/5951833/pexels-photo-5951833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+      slug: 'chili-vegetariano', name: 'Chili Vegetariano', difficulty: 'Media', servings: '6 porciones', time: '60 min', imageUrl: 'https://images.pexels.com/photos/5951833/pexels-photo-5951833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+    },
+    {
+      slug: 'ensalada-cesar-clasica', name: 'Ensalada César Clásica', difficulty: 'Fácil', servings: '2 porciones', time: '20 min', imageUrl: 'https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
+    },
+    {
+      slug: 'sopa-de-lentejas', name: 'Sopa de Lentejas Casera', difficulty: 'Fácil', servings: '6 porciones', time: '50 min', imageUrl: 'https://images.pexels.com/photos/5182143/pexels-photo-5182143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', description: '', mainImageUrl: '', gallery: [], ingredients: [], instructions: []
     }
   ];
 
   constructor() { }
-
-  getRecipes(): Recipe[] {
-    return this.recipes;
-  }
-
-  getRecipeBySlug(slug: string): Recipe | undefined {
-    return this.recipes.find(recipe => recipe.slug === slug);
-  }
+  getRecipes(): Recipe[] { return this.recipes; }
+  getRecipeBySlug(slug: string): Recipe | undefined { return this.recipes.find(recipe => recipe.slug === slug); }
 }

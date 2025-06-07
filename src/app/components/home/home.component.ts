@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { RecipeService } from '../../services/recipe.service';
 import { Recipe } from '../../models/recipe.model';
 
@@ -9,11 +9,39 @@ import { Recipe } from '../../models/recipe.model';
 })
 export class HomeComponent implements OnInit {
   
-  popularRecipes: Recipe[] = [];
+  allPopularRecipes: Recipe[] = [];
+  visibleRecipes: Recipe[] = [];
+  isExpanded = false;
+
+  readonly initialDesktopCount = 6;
+  readonly initialMobileCount = 4;
+  totalRecipes = 0;
 
   constructor(private recipeService: RecipeService) {}
 
   ngOnInit(): void {
-    this.popularRecipes = this.recipeService.getRecipes();
+    this.allPopularRecipes = this.recipeService.getRecipes();
+    this.totalRecipes = this.allPopularRecipes.length;
+    this.updateVisibleRecipes();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.updateVisibleRecipes();
+  }
+  
+  toggleRecipes(): void {
+    this.isExpanded = !this.isExpanded;
+    this.updateVisibleRecipes();
+  }
+
+  private updateVisibleRecipes(): void {
+    if (this.isExpanded) {
+      this.visibleRecipes = this.allPopularRecipes;
+    } else {
+      const isDesktop = window.innerWidth >= 768;
+      const count = isDesktop ? this.initialDesktopCount : this.initialMobileCount;
+      this.visibleRecipes = this.allPopularRecipes.slice(0, count);
+    }
   }
 }
