@@ -10,23 +10,47 @@ export class RecipeService {
     {
       slug: 'pollo-asado-con-vegetales',
       name: 'Pollo Asado con Vegetales',
-      description: 'Este clásico pollo asado es tierno y jugoso con piel crujiente, asado junto a una mezcla de vegetales de raíz. Los vegetales se caramelizan, absorbiendo los sabores del pollo. Un plato simple pero satisfactorio, perfecto para una cena entre semana o una reunión de fin de semana.',
+      description: 'Una receta ideal para una comida familiar, saludable y reconfortante. El horno hace la mayor parte del trabajo, dejando el pollo jugoso por dentro con una piel dorada y crujiente, mientras los vegetales se cocinan lentamente en sus deliciosos jugos.',
       difficulty: 'Media',
-      servings: '4 porciones',
+      servings: '4-6 porciones',
       time: '90 min',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCE2Je2LqhemarmXV0m8BELfbdworF8slRmoUOM2gQT3nBJO_N-GkfOSJTU4GnSSwFIPLn8tqaU7P4DVl8Ydss88yZvlJ_613CgZDZM2TMdN-3IyQDJtBtnWdTmaujRZe_LlBRRaP_VOfimurJLjIe-CSOtoJJz06HtJFkD_UsvKaPDrfs4nzLBbbG4odtVWIyIUTsyWaO87CSiXUcyYG655dpKpMq5KWLs8HMhhJbx1c5QQofA1QFd9XY-unypbW06Jeq9yLEasLY',
-      mainImageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCE2Je2LqhemarmXV0m8BELfbdworF8slRmoUOM2gQT3nBJO_N-GkfOSJTU4GnSSwFIPLn8tqaU7P4DVl8Ydss88yZvlJ_613CgZDZM2TMdN-3IyQDJtBtnWdTmaujRZe_LlBRRaP_VOfimurJLjIe-CSOtoJJz06HtJFkD_UsvKaPDrfs4nzLBbbG4odtVWIyIUTsyWaO87CSiXUcyYG655dpKpMq5KWLs8HMhhJbx1c5QQofA1QFd9XY-unypbW06Jeq9yLEasLY',
+      imageUrl: 'assets/images/recipes/pollo_asado_con_vegetales/imagen_principal.webp',
+      mainImageUrl: 'assets/images/recipes/pollo_asado_con_vegetales/imagen_principal.webp',
       gallery: [
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuCbGkRbD5uQPW03z57w3YWWI1zfc38JlEDWi2pTH2g-7fKjcIrOv80mrNeZ7qEGx1uuJLu4jkhixfn_PeHrWuNY-3Do24l2pIS-J20qRWCsHux5JFiSMvECK5oDo3XMDuLzQTkLTLWE8dgI8S0QV86WnsGB9eDpMfXcursydf8SWOK_zAtDC7aL4Vnh5RYYKSVtZjsZCZJqkDf54A7hwFuzSRcjF7Ln1F2fXPAfWKEb2m1vlNCBK4wdoKG1c0dHiKAjxrSyJKrIDJQ',
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuDP_Z5MnDhI4MZ9T5M1saAj9m1-Z4F1vC1inCMEAEGt0q-I_qDGufzZi3lvzAJnVyy_hqlD_AkkbXFOeU9n9GOrYlq-HoeNgKzZMfLC_slJXXn2mH7J--3T_9yVydPdSmKDwn5NGPvzr4afe0TFEorIIB2Zj1nUg586MJ4O0DG3L0JyEUir73clROp2dpMTQPizI8PCBo4s3Wk2yelTdp_svtlALm_h1VMUqvYzVNnn8w23rz7tGBSJE384bzoYgP8a17CUGAj_5pY',
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuBUUSZiTteH02a2Zx2L5EZ7UBAz8HR-ahRG3Ozx16iTBgl47O_k3KQV7-gjbhVut3Y2ylhuU-dLCRF0LOIOCZqSE68Y3Kpi6PRSGGxLP9hBBaKxtOegMvVF5XRNlk7FgDkueie9gyr0gSwUm0DmofHhWh3-Mj9CWMkGiWhmXdjn44ANUdEoLbN3OCPzssiKdGQP-OlFI_l_sK2OoZDD5GxouJ-AceAh6rIoKg2akygGqbLBRYq_3luVCCJy40KdvWbt3mDWHes6mRs',
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuBh25VUNlJnPaV4X2QObNNh_aCjknan9y2crpuM1IzcpyBw2gV86nnrnYWDKkw7Dxqc9piCObJhVzQzQLQ4pEi64VcbVun-DJI40GRjrbUZwskdyhtjBzmyDduchk4M1ZqeZ6ghvdURvOsNSP-jJgvTtmTqlxBr8JBSr28x8NrrdLCZuyi4gqtoegEJSa2LEpMpVsjHLCsfa9i6MRwi3uZazYkQ328bx15Zyjv7HSD9j7mulKmiJvECzQGNq2iQ_fBgQnN_d0AawJE'
+        'assets/images/recipes/pollo_asado_con_vegetales/paso1.webp',
+        'assets/images/recipes/pollo_asado_con_vegetales/paso2.webp',
+        'assets/images/recipes/pollo_asado_con_vegetales/paso3.webp',
+        'assets/images/recipes/pollo_asado_con_vegetales/paso4.webp',
+        'assets/images/recipes/pollo_asado_con_vegetales/paso5.webp',
+        'assets/images/recipes/pollo_asado_con_vegetales/paso6.webp',
+        'assets/images/recipes/pollo_asado_con_vegetales/paso7.webp',
+        'assets/images/recipes/pollo_asado_con_vegetales/paso8.webp',
+        'assets/images/recipes/pollo_asado_con_vegetales/paso9.webp'
       ],
       ingredients: [
-        '1 pollo entero (aprox. 1.5-2 kg)', '1 kg de vegetales de raíz mixtos', '4 cdas. de aceite de oliva', '2 cditas. de sal', '1 cdita. de pimienta negra', '1 cdita. de tomillo seco', '1 cdita. de romero seco', '4 dientes de ajo, picados', '1 limón, en cuartos', 'Perejil fresco, para decorar'
+        '1 pollo entero (1.5-2kg) o 4 muslos de pollo',
+        '4 patatas medianas',
+        '2 zanahorias grandes',
+        '1 cebolla grande',
+        '1 pimiento rojo',
+        '200g de champiñones',
+        '1 limón',
+        '2 dientes de ajo',
+        'Aceite de oliva virgen extra',
+        'Sal y pimienta negra al gusto',
+        'Hierbas aromáticas (tomillo, romero)',
+        'Opcional: otros vegetales como calabacín o calabaza'
       ],
       instructions: [
-        'Precalienta el horno a 200°C (400°F).', 'En un tazón grande, mezcla los vegetales troceados con aceite de oliva, sal, pimienta, tomillo y romero.', 'Coloca los vegetales en una sola capa en una bandeja para asar grande.', 'Seca el pollo con papel de cocina. Sazona por dentro y por fuera con sal y pimienta.', 'Rellena la cavidad con el ajo picado y los cuartos de limón.', 'Coloca el pollo sobre los vegetales en la bandeja de asar.', 'Asa durante 60-75 minutos, o hasta que el pollo alcance una temperatura interna de 74°C (165°F) y los vegetales estén tiernos.', 'Deja reposar el pollo durante 10 minutos antes de trinchar.', 'Decora con perejil fresco y sirve.'
+        'Precalienta el horno a 200°C (400°F).',
+        'Lava y prepara todos los vegetales (patatas, zanahorias, cebolla, pimiento, champiñones). Colócalos en una bandeja para horno formando una cama.',
+        'Seca bien el pollo con papel de cocina. Si usas pollo entero, rellena su cavidad con medio limón y unas ramitas de hierbas.',
+        'En un bol pequeño, mezcla un buen chorro de aceite de oliva, sal, pimienta, los ajos machacados y las hierbas aromáticas.',
+        'Unta el pollo (entero o los muslos) generosamente por todas partes con la mezcla de aceite y hierbas.',
+        'Coloca el pollo sobre la cama de vegetales en la bandeja.',
+        'Hornea durante aproximadamente 1 hora y 30 minutos. A mitad de la cocción, baña el pollo con los jugos de la bandeja.',
+        'Comprueba que esté listo: pincha el muslo y los jugos deben salir claros. Los vegetales deben estar tiernos y dorados.',
+        'Saca del horno y deja reposar 10 minutos antes de cortar y servir. ¡A disfrutar!'
       ]
     },
     {
