@@ -7,6 +7,7 @@ import { AiAssistantComponent } from './components/ai-assistant/ai-assistant.com
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'acerca-de', component: HomeComponent },
   { path: 'receta/:id', component: RecipeDetailComponent },
   { path: 'receta/:id/asistente', component: AiAssistantComponent }
 ];
