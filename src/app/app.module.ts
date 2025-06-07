@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 import { RecipeDetailComponent } from './components/recipe-detail/recipe-detail.component';
 import { AiAssistantComponent } from './components/ai-assistant/ai-assistant.component';
+import { AboutComponent } from './components/about/about.component'; // <-- 1. IMPORTAR
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AiAssistantComponent } from './components/ai-assistant/ai-assistant.com
     HeaderComponent,
     RecipeCardComponent,
     RecipeDetailComponent,
-    AiAssistantComponent
+    AiAssistantComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
