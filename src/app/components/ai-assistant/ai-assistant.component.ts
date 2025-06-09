@@ -20,7 +20,8 @@ export class AiAssistantComponent implements OnInit {
   messages: ChatMessage[] = [];
 
   userAvatar = 'https://lh3.googleusercontent.com/aida-public/AB6AXuC79rmCvMo2iLyllYr9FQQ7C_l1OXSktROO7wgwDRSH6kWV3eTKCOmP8jzzwiajlRELOVhCj14DrN-aq9KrkmXscDK469iQK6ysIaHGCloQA9sHaOHqIhOykKmQQ4vc230wq_B6F853usaeM-c7KTXvEYTvicFex2kj6lmHD3ureFs8R5xUl-hbWZlueaAw1eVXgcTZSsA-BbTkADdzFfDWLjJVei715pt227qYPunizSlHnTuXh8P4hAah4Pm7u7uZwkcQ5wazGGw';
-  aiAvatar = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDcvLyaOKDgvtK692nJ2ObLwf87aerhYejZT13-UR6sK0oqEoz8M8PgCvs0hPdaesjttSCudoPdJYRK8Mel7kD9RMD6ZLDX7876n5G5yFdTdYVw4wRs00uS8OegNzQtKLiITGpSPxhx6vhv1iNVjya6kZqGfZnwI6mPUi8HFJSjR_BUOJtJfUash9eP7dt2m-XK_REWuNV6Z58rG5vrq5XZz1y0Zj3LtrWb6qlx4XXw550mCdZni-uowoHX7cFQ66QP5IRG5UHvkJA';
+  
+  aiAvatar = 'assets/images/imagen_chef.webp';
 
   constructor(
     private route: ActivatedRoute,

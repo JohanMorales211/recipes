@@ -72,7 +72,6 @@
       <div class="flex flex-col w-full lg:w-3/5">
         <div class="w-full">
           <div class="w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg mb-3 bg-[#f4ece7]">
-            <!-- CAMBIO 2: bg-cover reemplazado por bg-contain -->
             <div class="w-full h-full bg-center bg-no-repeat bg-contain transition-all duration-500 ease-in-out"
                  [style.background-image]="'url(' + selectedImageUrl + ')'"
                  [style.transform]="'scale(' + (imageLoaded ? 1 : 1.1) + ')'">
@@ -132,11 +131,10 @@
   </div>
 
   <a *ngIf="recipe" [routerLink]="['/receta', recipe.slug, 'asistente']" title="Preguntar a la IA sobre esta receta"
-      class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-16 bg-[#f37a24] rounded-full shadow-lg hover:bg-orange-500 transition-all duration-300 transform hover:scale-110">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#1c130d" viewBox="0 0 256 256">
-      <path d="M208,128a80,80,0,1,1-80-80A80.09,80.09,0,0,1,208,128Zm-8,-28a16,16,0,1,0-16-16A16,16,0,0,0,200,100Zm-64,0a16,16,0,1,0-16-16A16,16,0,0,0,136,100Zm-48-16a16,16,0,1,0,16,16A16,16,0,0,0,88,84Zm-4.88,85.19A47.8,47.8,0,0,0,128,192a47.8,47.8,0,0,0,44.88-22.81,8,8,0,1,0-14.22-7.44A32,32,0,0,1,128,176a32,32,0,0,1-30.66-21.25,8,8,0,0,0-14.22,7.44Z"></path>
-    </svg>
+      class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-16 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 overflow-hidden animate-pulse-subtle">
+    <img src="assets/images/imagen_chef.webp" alt="Asistente de IA Chefsito" class="w-full h-full object-cover">
   </a>
+
 </div>
 
 <div *ngIf="!recipe" class="text-center py-20">

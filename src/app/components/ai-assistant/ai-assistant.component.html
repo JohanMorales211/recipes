@@ -1,54 +1,60 @@
-<div class="relative flex size-full min-h-screen flex-col bg-[#fdf6e9] overflow-x-hidden">
-  <div class="layout-container flex h-full grow flex-col">
+<div class="bg-[#fdf6e9] min-h-screen flex flex-col relative">
+
+  <a *ngIf="recipe" [routerLink]="['/receta', recipe.slug]"
+     class="absolute top-4 left-4 sm:top-6 sm:left-6 lg:top-8 lg:left-8 flex items-center gap-2 font-bold p-2 rounded-xl transition-colors z-20 bg-[#FDE6D4] text-[#1c130d] hover:bg-orange-200 shadow-md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+    </svg>
+    <span class="hidden sm:inline">Volver a la Receta</span>
+  </a>
+
+  <div class="w-full max-w-3xl mx-auto flex flex-col flex-1 h-full">
     
-    <div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
-      <div class="layout-content-container flex flex-col w-full max-w-2xl mx-auto">
+    <div class="px-4 pt-6 pb-4 text-center border-b border-[#f4ece7]">
+      <h2 class="text-[#1c130d] tracking-tight text-xl font-bold leading-tight">Asistente de Chef</h2>
+      <p class="text-sm text-[#9c6c49]">Chef Principal</p>
+    </div>
+    
+    <div class="flex-1 space-y-6 p-6 overflow-y-auto custom-scrollbar">
+      <div *ngFor="let message of messages" class="flex items-end gap-3" [ngClass]="{'justify-end': message.sender === 'user'}">
         
-        <div class="relative text-center pt-5 pb-3">
-          <a *ngIf="recipe" [routerLink]="['/receta', recipe.slug]"
-             class="absolute left-0 top-1/2 -translate-y-1/2 flex items-center gap-2 text-[#8c6f5a] hover:text-[#191410] font-medium p-2 rounded-lg transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
-              <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
-            </svg>
-            <span class="hidden sm:inline">Volver a la Receta</span>
-          </a>
-          
-          <h2 class="text-[#191410] tracking-tight text-2xl font-bold leading-tight">Asistente de Chef</h2>
-        </div>
+        <div *ngIf="message.sender === 'ai'" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0 border-2 border-white shadow-sm" [style.background-image]="'url(' + message.avatar + ')'"></div>
         
-        <div class="flex-1 space-y-6 p-4 overflow-y-auto">
-          <div *ngFor="let message of messages" class="flex items-end gap-3" [ngClass]="{'justify-end': message.sender === 'user'}">
-            <div *ngIf="message.sender === 'ai'" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" [style.background-image]="'url(' + message.avatar + ')'"></div>
-            <div class="flex flex-1 flex-col gap-1" [ngClass]="{'items-start': message.sender === 'ai', 'items-end': message.sender === 'user'}">
-              <p class="text-[#8c6f5a] text-xs font-normal leading-normal max-w-[360px]">
-                {{ message.sender === 'ai' ? 'Asistente IA' : 'Tú' }}
-              </p>
-              <p class="text-base font-normal leading-normal flex max-w-sm rounded-xl px-4 py-3 text-[#191410]" [ngClass]="{'bg-[#f1ede9]': message.sender === 'ai', 'bg-[#f3e3d7]': message.sender === 'user'}">
-                {{ message.text }}
-              </p>
-            </div>
-            <div *ngIf="message.sender === 'user'" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" [style.background-image]="'url(' + message.avatar + ')'"></div>
-          </div>
+        <div class="flex flex-1 flex-col gap-1 max-w-md" [ngClass]="{'items-start': message.sender === 'ai', 'items-end': message.sender === 'user'}">
+          <p class="text-[#8c6f5a] text-xs font-normal leading-normal px-1">
+            {{ message.sender === 'ai' ? 'Chefsito IA' : 'Tú' }}
+          </p>
+          <p class="text-base font-normal leading-relaxed flex rounded-2xl px-4 py-3 shadow-sm" 
+             [ngClass]="{
+               'bg-gray-100 text-[#1c130d] rounded-bl-none': message.sender === 'ai', 
+               'bg-[#FFF7ED] text-[#1c130d] rounded-br-none': message.sender === 'user'
+             }">
+            {{ message.text }}
+          </p>
         </div>
 
-        <div class="p-4 border-t border-solid border-[#f1ede9]">
-          <div class="flex w-full h-12 items-stretch rounded-xl bg-[#f1ede9] overflow-hidden">
-            <input 
-              [(ngModel)]="userInput"
-              (keyup.enter)="sendMessage()"
-              placeholder="Pregúntale al Asistente IA..."
-              class="form-input flex-1 border-none bg-transparent focus:ring-0 text-[#191410] placeholder:text-[#8c6f5a] px-4"
-            />
-            <button 
-              (click)="sendMessage()"
-              class="px-4 text-[#191410] font-bold hover:bg-[#f3e3d7] transition-colors"
-            >
-              Enviar
-            </button>
-          </div>
-        </div>
-
+        <div *ngIf="message.sender === 'user'" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0 border-2 border-white shadow-sm" [style.background-image]="'url(' + message.avatar + ')'"></div>
       </div>
     </div>
+
+    <div class="sticky bottom-0 z-10 p-4 bg-gradient-to-t from-[#fdf6e9] via-[#fdf6e9] to-transparent">
+      <div class="flex w-full items-center rounded-full bg-white shadow-lg overflow-hidden ring-1 ring-black/5">
+        <input 
+          [(ngModel)]="userInput"
+          (keyup.enter)="sendMessage()"
+          placeholder="Escribe tu pregunta..."
+          class="form-input flex-1 border-none bg-transparent focus:ring-0 text-[#191410] placeholder:text-[#9c6c49] px-5 py-3"
+        />
+        <button 
+          (click)="sendMessage()"
+          class="p-2 mr-2 text-[#9c6c49] transition-colors flex items-center justify-center rounded-full"
+          [disabled]="!userInput.trim()"
+          [ngClass]="{'opacity-40 cursor-not-allowed': !userInput.trim(), 'hover:bg-gray-100 hover:text-[#f37a24]': userInput.trim()}"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M221.66,133.66l-40,40a8,8,0,0,1-11.32-11.32L192,140H32a8,8,0,0,1,0-16H192l-21.66-21.66a8,8,0,0,1,11.32-11.32l40,40A8,8,0,0,1,221.66,133.66Z" transform="rotate(90 128 128) scale(-1, 1) translate(0, -256)"></path></svg>
+        </button>
+      </div>
+    </div>
+
   </div>
 </div>
