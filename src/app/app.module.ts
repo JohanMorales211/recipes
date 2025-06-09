@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,8 @@ import { AiAssistantComponent } from './components/ai-assistant/ai-assistant.com
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { MarkdownToHtmlPipe } from './pipes/markdown-to-html.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,12 +25,14 @@ import { FooterComponent } from './components/footer/footer.component';
     RecipeDetailComponent,
     AiAssistantComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    MarkdownToHtmlPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
