@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { RecipeService } from '../../services/recipe.service';
 import { Recipe } from '../../models/recipe.model';
 
@@ -7,8 +7,11 @@ import { Recipe } from '../../models/recipe.model';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   
+  @ViewChild('howToUseBlock') howToUseBlock!: ElementRef;
+  isBlockVisible = false;
+
   allPopularRecipes: Recipe[] = [];
   visibleRecipes: Recipe[] = [];
   isExpanded = false;
@@ -23,6 +26,21 @@ export class HomeComponent implements OnInit {
     this.allPopularRecipes = this.recipeService.getRecipes();
     this.totalRecipes = this.allPopularRecipes.length;
     this.updateVisibleRecipes();
+  }
+
+  ngAfterViewInit(): void {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.isBlockVisible = true;
+          observer.unobserve(this.howToUseBlock.nativeElement);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    observer.observe(this.howToUseBlock.nativeElement);
   }
 
   @HostListener('window:resize', ['$event'])
