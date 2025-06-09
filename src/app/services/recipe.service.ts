@@ -11,7 +11,8 @@ export class RecipeService {
 
   private recipeSlugs: string[] = [
     'pollo-asado-con-vegetales',
-    'alitas-bbq-caseras'
+    'alitas-bbq-caseras',
+    'frijoles-colombianos-tradicionales',
   ];
 
   private cachedRecipes: { [key: string]: Recipe } = {};
