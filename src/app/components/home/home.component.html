@@ -17,8 +17,14 @@
         <div class="search-icon flex items-center pl-5 bg-transparent">
           <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" class="text-[#9c6c49]" viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
         </div>
-        <input placeholder="Busca una receta..." class="form-input w-full flex-1 border-none focus:ring-0 bg-transparent text-[#1c130d] placeholder:text-[#9c6c49] text-base sm:text-lg" />
-        <button class="flex-shrink-0 bg-[#f37a24] text-white text-base font-bold px-6 sm:px-8 hover:bg-orange-500 transition-colors">
+        <input 
+          placeholder="Busca una receta..." 
+          class="form-input w-full flex-1 border-none focus:ring-0 bg-transparent text-[#1c130d] placeholder:text-[#9c6c49] text-base sm:text-lg"
+          [(ngModel)]="searchTerm"
+          (input)="updateDisplayedRecipes()" />
+        <button 
+          (click)="updateDisplayedRecipes()"
+          class="flex-shrink-0 bg-[#f37a24] text-white text-base font-bold px-6 sm:px-8 hover:bg-orange-500 transition-colors">
           Buscar
         </button>
       </div>
@@ -42,7 +48,7 @@
     </div>
 
     <h2 class="text-[#1c130d] text-xl md:text-[22px] font-bold leading-tight tracking-tight pb-3 pt-5">
-      Recetas Populares
+      {{ searchTerm ? 'Resultados de la búsqueda' : 'Recetas Populares' }}
     </h2>
 
     <div class="grid grid-cols-2 md:grid-cols-6 gap-4 sm:gap-6 pb-4">
@@ -51,7 +57,12 @@
       </div>
     </div>
 
-    <div *ngIf="totalRecipes > initialMobileCount" class="mt-8 flex justify-center">
+    <div *ngIf="visibleRecipes.length === 0 && searchTerm" class="text-center py-10">
+      <h3 class="text-xl font-bold text-[#1c130d]">No se encontraron resultados</h3>
+      <p class="text-[#9c6c49]">Prueba con otro término de búsqueda, como "pollo" o "alitas".</p>
+    </div>
+
+    <div *ngIf="!searchTerm && totalRecipes > initialMobileCount" class="mt-8 flex justify-center">
       <button (click)="toggleRecipes()" class="bg-[#FDE6D4] text-[#1c130d] font-bold py-3 px-6 rounded-xl hover:bg-orange-200 transition-colors text-base shadow-md hover:shadow-lg">
         {{ isExpanded ? 'Ver menos' : 'Ver más recetas' }}
       </button>
