@@ -19,7 +19,7 @@
         
         <div *ngIf="message.role === 'assistant'" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0 border-2 border-white shadow-sm self-start" [style.background-image]="'url(' + aiAvatar + ')'"></div>
         
-        <div class="flex flex-1 flex-col gap-1 max-w-md" [ngClass]="{'items-start': message.role === 'assistant', 'items-end': message.role === 'user'}">
+        <div class="flex flex-1 flex-col gap-1 max-w-md lg:max-w-xl" [ngClass]="{'items-start': message.role === 'assistant', 'items-end': message.role === 'user'}">
           <p class="text-[#8c6f5a] text-xs font-normal leading-normal px-1">
             {{ message.role === 'assistant' ? 'Chefsito IA' : 'Tú' }}
           </p>

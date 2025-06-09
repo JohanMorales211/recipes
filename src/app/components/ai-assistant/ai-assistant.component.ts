@@ -34,8 +34,9 @@ export class AiAssistantComponent implements OnInit, OnDestroy, AfterViewChecked
 
   isLoading: boolean = false;
   private apiSubscription: Subscription | undefined;
+  private recipeSubscription: Subscription | undefined;
   
-  userAvatar = 'https://lh3.googleusercontent.com/aida-public/AB6AXuC79rmCvMo2iLyllYr9FQQ7C_l1OXSktROO7wgwDRSH6kWV3eTKCOmP8jzzwiajlRELOVhCj14DrN-aq9KrkmXscDK469iQK6ysIaHGCloQA9sHaOHqIhOykKmQQ4vc230wq_B6F853usaeM-c7KTXvEYTvicFex2kj6lmHD3ureFs8R5xUl-hbWZlueaAw1eVXgcTZSsA-BbTkADdzFfDWLjJVei715pt227qYPunizSlHnTuXh8P4hAah4Pm7u7uZwkcQ5wazGGw';
+  userAvatar = 'assets/images/ratatouille.webp';
   aiAvatar = 'assets/images/imagen_chef.webp';
 
   constructor(
@@ -47,9 +48,20 @@ export class AiAssistantComponent implements OnInit, OnDestroy, AfterViewChecked
   ngOnInit(): void {
     const slug = this.route.snapshot.paramMap.get('id');
     if (slug) {
-      this.recipe = this.recipeService.getRecipeBySlug(slug);
+      this.recipeSubscription = this.recipeService.getRecipeBySlug(slug).subscribe(
+        (recipe: Recipe | undefined) => {
+          this.recipe = recipe;
+          this.initializeChat();
+        },
+        error => {
+          console.error(`Error loading recipe ${slug} in AI Assistant:`, error);
+          this.recipe = undefined;
+          this.initializeChat();
+        }
+      );
+    } else {
+      this.initializeChat();
     }
-    this.initializeChat();
   }
 
   ngAfterViewChecked(): void {
@@ -58,6 +70,7 @@ export class AiAssistantComponent implements OnInit, OnDestroy, AfterViewChecked
 
   ngOnDestroy(): void {
     this.apiSubscription?.unsubscribe();
+    this.recipeSubscription?.unsubscribe();
   }
 
   toggleThought(message: AiDisplayMessage): void {
@@ -136,7 +149,7 @@ export class AiAssistantComponent implements OnInit, OnDestroy, AfterViewChecked
     if (!this.recipe) {
       const errorMessage: AiDisplayMessage = {
         role: 'assistant',
-        content: 'No se pudo cargar la receta. Por favor, vuelve a intentarlo.',
+        content: 'No se pudo cargar la receta. Por favor, vuelve a intentarlo o asegúrate de que la URL de la receta sea correcta.',
         isLoading: false
       };
       this.displayMessages.push(errorMessage);

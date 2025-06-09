@@ -17,6 +17,10 @@ export class MarkdownToHtmlPipe implements PipeTransform {
 
     html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 
+    html = html.replace(/^###\s*(.*)$/gm, '<strong>$1</strong>');
+
+    html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+
     return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 }
