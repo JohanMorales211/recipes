@@ -1,3 +1,8 @@
+export interface IngredientSection {
+  section: string;
+  items: string[];
+}
+
 export interface Recipe {
   slug: string;
   name: string;
@@ -6,8 +11,8 @@ export interface Recipe {
   servings: string;
   time: string;
   mainImageUrl: string;
-  imageUrl?: string; // Hacemos esta opcional, ya que la usaremos en home
+  imageUrl?: string;
   gallery: string[];
-  ingredients: string[];
+  ingredients: IngredientSection[];
   instructions: string[];
 }

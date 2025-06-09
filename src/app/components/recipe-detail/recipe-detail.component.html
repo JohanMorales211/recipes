@@ -1,8 +1,7 @@
 <div *ngIf="recipe" class="bg-[#fdf6e9] relative">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
     <div class="mb-4">
-      <a routerLink="/home"
-         class="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-bold text-[#1c130d] bg-[#FDE6D4] hover:bg-orange-200 transition-colors">
+      <a routerLink="/home" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-bold text-[#1c130d] bg-[#FDE6D4] hover:bg-orange-200 transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
         <span>Volver al inicio</span>
       </a>
@@ -15,47 +14,36 @@
       </div>
       <div>
         <div class="w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg mb-3 bg-[#f4ece7]">
-          <div class="w-full h-full bg-center bg-no-repeat bg-contain transition-all duration-500 ease-in-out"
-               [style.background-image]="'url(' + selectedImageUrl + ')'"
-               [style.transform]="'scale(' + (imageLoaded ? 1 : 1.1) + ')'">
-          </div>
+          <div class="w-full h-full bg-center bg-no-repeat bg-contain transition-all duration-500 ease-in-out" [style.background-image]="'url(' + selectedImageUrl + ')'" [style.transform]="'scale(' + (imageLoaded ? 1 : 1.1) + ')'"></div>
         </div>
         <div class="relative">
           <div class="overflow-hidden">
-            <div class="flex transition-transform duration-500 ease-in-out"
-                 [style.transform]="'translateX(-' + (carouselIndex * 25) + '%)'">
+            <div class="flex transition-transform duration-500 ease-in-out" [style.transform]="'translateX(-' + (carouselIndex * 25) + '%)'">
               <div *ngFor="let imageUrl of galleryImages" class="flex-shrink-0 w-1/4 p-1.5">
-                <div (click)="selectImage(imageUrl)"
-                     class="aspect-square rounded-lg overflow-hidden cursor-pointer border-2 transition-all duration-300"
-                     [ngClass]="imageUrl === selectedImageUrl ? 'border-[#f37a24] scale-105' : 'border-transparent hover:border-gray-400'">
-                  <div class="w-full h-full bg-center bg-no-repeat bg-cover"
-                       [style.background-image]="'url(' + imageUrl + ')'">
-                  </div>
+                <div (click)="selectImage(imageUrl)" class="aspect-square rounded-lg overflow-hidden cursor-pointer border-2 transition-all duration-300" [ngClass]="imageUrl === selectedImageUrl ? 'border-[#f37a24] scale-105' : 'border-transparent hover:border-gray-400'">
+                  <div class="w-full h-full bg-center bg-no-repeat bg-cover" [style.background-image]="'url(' + imageUrl + ')'"></div>
                 </div>
               </div>
             </div>
           </div>
-          <button *ngIf="carouselIndex > 0"
-                  (click)="previousImage()"
-                  class="absolute top-1/2 -translate-y-1/2 left-0 -ml-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
-          </button>
-          <button *ngIf="carouselIndex < galleryImages.length - thumbnailsToShow"
-                  (click)="nextImage()"
-                  class="absolute top-1/2 -translate-y-1/2 right-0 -mr-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
-          </button>
+          <button *ngIf="carouselIndex > 0" (click)="previousImage()" class="absolute top-1/2 -translate-y-1/2 left-0 -ml-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg></button>
+          <button *ngIf="carouselIndex < galleryImages.length - thumbnailsToShow" (click)="nextImage()" class="absolute top-1/2 -translate-y-1/2 right-0 -mr-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></button>
         </div>
       </div>
+      
       <div>
-        <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] pb-2">Ingredientes</h3>
-        <div class="space-y-1">
-          <label *ngFor="let ingredient of recipe.ingredients" class="flex items-center gap-x-3 py-2 cursor-pointer">
-            <input type="checkbox" class="h-5 w-5 rounded border-[#e8d9ce] border-2 bg-transparent text-[#f37a24] checked:bg-[#f37a24] focus:ring-0 focus:ring-offset-0" />
-            <p class="text-[#1c130d] text-base font-normal leading-normal">{{ ingredient }}</p>
-          </label>
+        <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] pb-3 mb-3 border-b border-[#e8d9ce]">Ingredientes</h3>
+        <div *ngFor="let section of recipe.ingredients; let isFirst = first" [ngClass]="{ 'mt-6': !isFirst }">
+          <h4 class="text-[#9c6c49] text-sm font-bold uppercase tracking-wider mb-3">{{ section.section }}</h4>
+          <div class="space-y-1">
+            <label *ngFor="let item of section.items" class="flex items-center gap-x-3 py-2 cursor-pointer">
+              <input type="checkbox" class="h-5 w-5 rounded border-[#e8d9ce] border-2 bg-transparent text-[#f37a24] checked:bg-[#f37a24] focus:ring-0 focus:ring-offset-0" />
+              <p class="text-[#1c130d] text-base font-normal leading-normal">{{ item }}</p>
+            </label>
+          </div>
         </div>
       </div>
+
       <div>
         <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] pb-2">Instrucciones</h3>
         <div class="space-y-3">
@@ -67,41 +55,24 @@
       </div>
     </div>
 
-    <!-- Vista Escritorio -->
     <div class="hidden lg:flex flex-row gap-6">
       <div class="flex flex-col w-full lg:w-3/5">
         <div class="w-full">
           <div class="w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg mb-3 bg-[#f4ece7]">
-            <div class="w-full h-full bg-center bg-no-repeat bg-contain transition-all duration-500 ease-in-out"
-                 [style.background-image]="'url(' + selectedImageUrl + ')'"
-                 [style.transform]="'scale(' + (imageLoaded ? 1 : 1.1) + ')'">
-            </div>
+            <div class="w-full h-full bg-center bg-no-repeat bg-contain transition-all duration-500 ease-in-out" [style.background-image]="'url(' + selectedImageUrl + ')'" [style.transform]="'scale(' + (imageLoaded ? 1 : 1.1) + ')'"></div>
           </div>
           <div class="relative">
             <div class="overflow-hidden">
-              <div class="flex transition-transform duration-500 ease-in-out"
-                   [style.transform]="'translateX(-' + (carouselIndex * 25) + '%)'">
+              <div class="flex transition-transform duration-500 ease-in-out" [style.transform]="'translateX(-' + (carouselIndex * 25) + '%)'">
                 <div *ngFor="let imageUrl of galleryImages" class="flex-shrink-0 w-1/4 p-1.5">
-                  <div (click)="selectImage(imageUrl)"
-                       class="aspect-square rounded-lg overflow-hidden cursor-pointer border-2 transition-all duration-300"
-                       [ngClass]="imageUrl === selectedImageUrl ? 'border-[#f37a24] scale-105' : 'border-transparent hover:border-gray-400'">
-                    <div class="w-full h-full bg-center bg-no-repeat bg-cover"
-                         [style.background-image]="'url(' + imageUrl + ')'">
-                    </div>
+                  <div (click)="selectImage(imageUrl)" class="aspect-square rounded-lg overflow-hidden cursor-pointer border-2 transition-all duration-300" [ngClass]="imageUrl === selectedImageUrl ? 'border-[#f37a24] scale-105' : 'border-transparent hover:border-gray-400'">
+                    <div class="w-full h-full bg-center bg-no-repeat bg-cover" [style.background-image]="'url(' + imageUrl + ')'"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <button *ngIf="carouselIndex > 0"
-                    (click)="previousImage()"
-                    class="absolute top-1/2 -translate-y-1/2 left-0 -ml-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
-            </button>
-            <button *ngIf="carouselIndex < galleryImages.length - thumbnailsToShow"
-                    (click)="nextImage()"
-                    class="absolute top-1/2 -translate-y-1/2 right-0 -mr-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
-            </button>
+            <button *ngIf="carouselIndex > 0" (click)="previousImage()" class="absolute top-1/2 -translate-y-1/2 left-0 -ml-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg></button>
+            <button *ngIf="carouselIndex < galleryImages.length - thumbnailsToShow" (click)="nextImage()" class="absolute top-1/2 -translate-y-1/2 right-0 -mr-4 z-10 p-2 rounded-full shadow-md transition text-[#1c130d] bg-[#FDE6D4]/80 hover:bg-[#FDE6D4]"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></button>
           </div>
         </div>
         <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-8">Instrucciones</h3>
@@ -117,24 +88,26 @@
           <h1 class="text-[#1c130d] tracking-tight text-3xl md:text-4xl font-bold leading-tight">{{ recipe.name }}</h1>
           <p class="text-[#1c130d] text-base font-normal leading-relaxed pt-4">{{ recipe.description }}</p>
         </div>
+        
         <div class="p-4">
-          <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] pb-2">Ingredientes</h3>
-          <div class="space-y-1">
-            <label *ngFor="let ingredient of recipe.ingredients" class="flex items-center gap-x-3 py-2 cursor-pointer">
-              <input type="checkbox" class="h-5 w-5 rounded border-[#e8d9ce] border-2 bg-transparent text-[#f37a24] checked:bg-[#f37a24] focus:ring-0 focus:ring-offset-0" />
-              <p class="text-[#1c130d] text-base font-normal leading-normal">{{ ingredient }}</p>
-            </label>
+          <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] pb-3 mb-3 border-b border-[#e8d9ce]">Ingredientes</h3>
+          <div *ngFor="let section of recipe.ingredients; let isFirst = first" [ngClass]="{ 'mt-6': !isFirst }">
+            <h4 class="text-[#9c6c49] text-sm font-bold uppercase tracking-wider mb-3">{{ section.section }}</h4>
+            <div class="space-y-1">
+              <label *ngFor="let item of section.items" class="flex items-center gap-x-3 py-2 cursor-pointer">
+                <input type="checkbox" class="h-5 w-5 rounded border-[#e8d9ce] border-2 bg-transparent text-[#f37a24] checked:bg-[#f37a24] focus:ring-0 focus:ring-offset-0" />
+                <p class="text-[#1c130d] text-base font-normal leading-normal">{{ item }}</p>
+              </label>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <a *ngIf="recipe" [routerLink]="['/receta', recipe.slug, 'asistente']" title="Preguntar a la IA sobre esta receta"
-      class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-16 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 overflow-hidden animate-pulse-subtle">
+  <a *ngIf="recipe" [routerLink]="['/receta', recipe.slug, 'asistente']" title="Preguntar a la IA sobre esta receta" class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-16 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 overflow-hidden animate-pulse-subtle">
     <img src="assets/images/imagen_chef.webp" alt="Asistente de IA Chefsito" class="w-full h-full object-cover">
   </a>
-
 </div>
 
 <div *ngIf="!recipe" class="text-center py-20">
