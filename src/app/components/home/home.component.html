@@ -1,10 +1,17 @@
 <div class="py-5">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     
-    <div class="flex flex-col gap-10 items-center text-center py-12 md:py-16">
+    <div class="flex flex-col gap-6 items-center text-center py-12 md:py-16">
       <h1 class="text-[#1c130d] text-5xl sm:text-6xl lg:text-7xl font-black leading-tight tracking-tighter">
         Cocina, Crea y <span class="text-[#f37a24]">Comparte</span>
       </h1>
+
+      <button 
+        (click)="toggleHowToUse()" 
+        class="inline-flex items-center gap-2 rounded-full px-4 py-2 font-semibold text-[#9c6c49] bg-[#FFF7ED] border border-[#FDE6D4] hover:bg-[#FDE6D4] hover:text-[#1c130d] transition-all shadow-sm hover:shadow-md animate-pulse-glow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm-8-40a8,8,0,0,1-8-8V128a8,8,0,0,1,16,0v40A8,8,0,0,1,120,176ZM128,96a12,12,0,1,1-12-12A12,12,0,0,1,128,96Z"></path></svg>
+        <span>Conoce al Asistente de Cocina</span>
+      </button>
       
       <div class="search-container flex w-full max-w-lg h-14 sm:h-16 rounded-xl overflow-hidden shadow-lg">
         <div class="search-icon flex items-center pl-5 bg-transparent">
@@ -19,9 +26,8 @@
     </div>
 
     <div 
-      #howToUseBlock
-      class="my-12 p-6 bg-[#FFF7ED] border border-[#FDE6D4] rounded-2xl flex flex-col md:flex-row items-center gap-6 text-center md:text-left shadow-sm how-to-use-block"
-      [class.is-visible]="isBlockVisible">
+      *ngIf="isHowToUseVisible"
+      class="my-6 p-6 bg-[#FFF7ED] border border-[#FDE6D4] rounded-2xl flex flex-col md:flex-row items-center gap-6 text-center md:text-left shadow-sm how-to-use-block is-visible">
       <div class="flex-shrink-0 how-to-use-image">
         <img src="assets/images/imagen_chef.webp" alt="Asistente Chefsito" class="w-28 h-28 rounded-full object-cover border-4 border-white shadow-md">
       </div>
