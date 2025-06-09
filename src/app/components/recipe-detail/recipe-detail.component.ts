@@ -23,6 +23,8 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
   showChefBubble = false;
   private bubbleHasBeenShown = false;
 
+  completedSteps: boolean[] = [];
+
   private routeSubscription: Subscription | undefined;
 
   constructor(
@@ -40,6 +42,8 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
             if (this.recipe) {
               this.selectImage(this.recipe.mainImageUrl);
               this.galleryImages = [this.recipe.mainImageUrl, ...(this.recipe.gallery || [])];
+              
+              this.completedSteps = new Array(this.recipe.instructions.length).fill(false);
               
               if (!this.bubbleHasBeenShown) {
                 this.bubbleHasBeenShown = true;
@@ -66,6 +70,12 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     if (this.routeSubscription) {
       this.routeSubscription.unsubscribe();
+    }
+  }
+
+  toggleStep(index: number): void {
+    if (this.completedSteps[index] !== undefined) {
+      this.completedSteps[index] = !this.completedSteps[index];
     }
   }
 

@@ -49,8 +49,13 @@
       <div>
         <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] pb-2">Instrucciones</h3>
         <div class="space-y-3">
-          <div *ngFor="let instruction of recipe.instructions; let i = index" class="flex items-start gap-4 py-2">
-            <div class="flex-shrink-0 size-7 bg-[#f4ece7] text-[#1c130d] font-bold rounded-full flex items-center justify-center">{{ i + 1 }}</div>
+          <div *ngFor="let instruction of recipe.instructions; let i = index" 
+               (click)="toggleStep(i)"
+               class="flex items-start gap-4 py-2 cursor-pointer">
+            <div 
+              [class]="'flex-shrink-0 size-7 font-bold rounded-full flex items-center justify-center transition-colors duration-300 text-[#1c130d] ' + (completedSteps[i] ? 'bg-[#fed7aa]' : 'bg-[#f4ece7]')">
+              {{ i + 1 }}
+            </div>
             <p class="text-[#1c130d] text-base font-normal leading-relaxed pt-0.5">{{ instruction }}</p>
           </div>
         </div>
@@ -81,8 +86,13 @@
         </div>
         <h3 class="text-[#1c130d] text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-8">Instrucciones</h3>
         <div class="px-4 space-y-3">
-          <div *ngFor="let instruction of recipe.instructions; let i = index" class="flex items-start gap-4 py-2">
-            <div class="flex-shrink-0 size-7 bg-[#f4ece7] text-[#1c130d] font-bold rounded-full flex items-center justify-center">{{ i + 1 }}</div>
+          <div *ngFor="let instruction of recipe.instructions; let i = index"
+               (click)="toggleStep(i)"
+               class="flex items-start gap-4 py-2 cursor-pointer">
+            <div 
+              [class]="'flex-shrink-0 size-7 font-bold rounded-full flex items-center justify-center transition-colors duration-300 text-[#1c130d] ' + (completedSteps[i] ? 'bg-[#fed7aa]' : 'bg-[#f4ece7]')">
+              {{ i + 1 }}
+            </div>
             <p class="text-[#1c130d] text-base font-normal leading-relaxed pt-0.5">{{ instruction }}</p>
           </div>
         </div>
@@ -122,6 +132,7 @@
   <a *ngIf="recipe" [routerLink]="['/receta', recipe.slug, 'asistente']" title="Preguntar a la IA sobre esta receta" class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-16 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 overflow-hidden animate-pulse-subtle">
     <img src="assets/images/imagen_chef.webp" alt="Asistente de IA Chefsito" class="w-full h-full object-cover">
   </a>
+</div>
 
 <div *ngIf="!recipe" class="text-center py-20">
   <h2 class="text-2xl font-bold text-[#1c130d]">Receta no encontrada</h2>
