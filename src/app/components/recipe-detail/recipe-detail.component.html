@@ -109,10 +109,19 @@
     </div>
   </div>
 
+  <div *ngIf="showChefBubble"
+       class="hidden md:flex fixed bottom-28 right-8 z-50 items-center gap-2 p-3 rounded-lg shadow-xl animate-fade-slide-in animate-background-pulse">
+    <p class="text-[#1c130d] font-semibold text-sm">¿Dudas? ¡Pregúntame aquí!</p>
+    <div class="absolute -bottom-2 right-5 w-0 h-0 
+                border-l-[10px] border-l-transparent
+                border-t-[12px] border-t-white
+                border-r-[10px] border-r-transparent">
+    </div>
+  </div>
+
   <a *ngIf="recipe" [routerLink]="['/receta', recipe.slug, 'asistente']" title="Preguntar a la IA sobre esta receta" class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-16 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 overflow-hidden animate-pulse-subtle">
     <img src="assets/images/imagen_chef.webp" alt="Asistente de IA Chefsito" class="w-full h-full object-cover">
   </a>
-</div>
 
 <div *ngIf="!recipe" class="text-center py-20">
   <h2 class="text-2xl font-bold text-[#1c130d]">Receta no encontrada</h2>

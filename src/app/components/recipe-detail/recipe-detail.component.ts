@@ -20,6 +20,9 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
   carouselIndex = 0;
   readonly thumbnailsToShow = 4;
 
+  showChefBubble = false;
+  private bubbleHasBeenShown = false;
+
   private routeSubscription: Subscription | undefined;
 
   constructor(
@@ -37,6 +40,14 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
             if (this.recipe) {
               this.selectImage(this.recipe.mainImageUrl);
               this.galleryImages = [this.recipe.mainImageUrl, ...(this.recipe.gallery || [])];
+              
+              if (!this.bubbleHasBeenShown) {
+                this.bubbleHasBeenShown = true;
+                setTimeout(() => {
+                  this.showChefBubble = true;
+                }, 1000); 
+              }
+
             } else {
               console.error('Receta no encontrada con el slug:', recipeSlug);
             }
