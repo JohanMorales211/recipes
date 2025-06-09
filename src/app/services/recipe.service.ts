@@ -13,6 +13,15 @@ export class RecipeService {
     'pollo-asado-con-vegetales',
     'alitas-bbq-caseras',
     'frijoles-colombianos-tradicionales',
+    'hamburguesa-colombiana-morbida',
+    'hamburguesa-colombiana-clasica',
+    'perro-caliente-colombiano',
+    'salchipapa-caleña',
+    'ajiaco-santafereño',
+    'bandeja-paisa',
+    'arepas-colombianas-con-queso',
+    'patacones-con-hogao',
+    'pizza-casera'
   ];
 
   private cachedRecipes: { [key: string]: Recipe } = {};
@@ -45,6 +54,12 @@ export class RecipeService {
         this.allRecipesLoaded = false;
         return of([]);
       })
+    );
+  }
+
+  getRecipesByCategory(category: string): Observable<Recipe[]> {
+    return this.getAllRecipes().pipe(
+      map(recipes => recipes.filter(recipe => recipe.category === category))
     );
   }
 

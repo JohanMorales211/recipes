@@ -36,7 +36,7 @@ export class AiAssistantComponent implements OnInit, OnDestroy, AfterViewChecked
   private apiSubscription: Subscription | undefined;
   private recipeSubscription: Subscription | undefined;
   
-  userAvatar = 'assets/images/ratatouille.webp';
+  userAvatar = 'assets/images/logo_chefsito_black.webp';
   aiAvatar = 'assets/images/imagen_chef.webp';
 
   constructor(

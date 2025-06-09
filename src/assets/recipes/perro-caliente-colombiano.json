@@ -1,0 +1,54 @@
+{
+  "slug": "perro-caliente-colombiano",
+  "name": "Perro Caliente",
+  "description": "Icono de comida rápida callejera. Salchicha jugosa en pan suave, coronada con piña, salsa rosada y crujiente papa criolla. Explosión de sabores dulces, ácidos y umami en cada bocado.",
+  "difficulty": "Fácil",
+  "servings": "4 unidades",
+  "time": "25 minutos",
+  "mainImageUrl": "https://i.postimg.cc/8z2ZbJ4G/perrocaliente-main.webp",
+  "imageUrl": "https://i.postimg.cc/8z2ZbJ4G/perrocaliente-main.webp",
+  "gallery": [
+    "https://i.postimg.cc/2jXhY1v8/perrocaliente-gallery-1.webp",
+    "https://i.postimg.cc/8P8WwRwQ/perrocaliente-gallery-2.webp",
+    "https://i.postimg.cc/0jMZb6G1/perrocaliente-gallery-3.webp"
+  ],
+  "category": "fast-food",
+  "ingredients": [
+    {
+      "section": "Base Esencial",
+      "items": [
+        "4 salchichas tipo Viena (ternera/pollo)",
+        "4 panes para perro (brioche o tradicional)",
+        "8 lonchas de tocineta (opcional)"
+      ]
+    },
+    {
+      "section": "Toppings Tradicionales",
+      "items": [
+        "1 taza de piña fresca en cubos",
+        "1 taza de papa criolla frita (o patatas fritas)",
+        "½ taza de maíz dulce cocido",
+        "½ taza de queso costeño rallado",
+        "¼ taza de cebolla morada picada",
+        "Lechuga repollada picada"
+      ]
+    },
+    {
+      "section": "Salsas Colombianas",
+      "items": [
+        "Salsa rosada (mezcla de mayonesa + ketchup)",
+        "Salsa de ajo (alioli)",
+        "Salsa de piña (opcional)",
+        "Ají picante colombiano"
+      ]
+    }
+  ],
+  "instructions": [
+    "Prepara las salchichas: Haz cortes diagonales superficiales en las salchichas. Envuelve cada una con 2 lonchas de tocineta, fijando con palillo :cite[1]:cite[7].",
+    "Cocina las salchichas: En sartén a fuego medio, fríe las salchichas 8-10 min girando hasta dorar la tocineta. Retira palillos antes de servir.",
+    "Prepara toppings: Fríe las papas criollas en rodajas hasta crujientes. Pica cebolla y lechuga. Corta piña en cubos pequeños :cite[5].",
+    "Arma los panes: Abre los panes ligeramente tostados. Unta salsa rosada en ambas caras. Coloca lechuga como base.",
+    "Montaje clásico: Sobre lechuga, coloca salchicha con tocineta. Cubre con maíz, piña, cebolla morada y queso costeño.",
+    "Acabado final: Corona con papa criolla frita. Rocía salsa rosada y ají al gusto. Opcional: añade huevo de codorniz o aguacate :cite[3]:cite[7]."
+  ]
+}

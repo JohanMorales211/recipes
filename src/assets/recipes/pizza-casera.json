@@ -1,0 +1,67 @@
+{
+  "slug": "pizza-casera",
+  "name": "Pizza Casera",
+  "description": "Masa fermentada con chicha y cubierta con chorizo antioqueño, choclo tierno y guacamole. Un homenaje a la tradición colombiana en formato italiano.",
+  "difficulty": "Media",
+  "servings": "2 pizzas medianas (30 cm)",
+  "time": "2 horas 30 min (incluye fermentación)",
+  "mainImageUrl": "https://i.postimg.cc/8z2ZbJ4G/pizza-casera-main.webp",
+  "imageUrl": "https://i.postimg.cc/8z2ZbJ4G/pizza-casera-main.webp",
+  "gallery": [
+    "https://i.postimg.cc/2jXhY1v8/pizza-gallery-1.webp",
+    "https://i.postimg.cc/8P8WwRwQ/pizza-gallery-2.webp",
+    "https://i.postimg.cc/0jMZb6G1/pizza-gallery-3.webp"
+  ],
+  "category": "fast-food",
+  "ingredients": [
+    {
+      "section": "Masa Madre (fermento lento)",
+      "items": [
+        "500 g harina de trigo 00",
+        "300 ml agua tibia (38°C)",
+        "10 g sal fina",
+        "7 g levadura seca",
+        "1 cda azúcar panela",
+        "2 cdas aceite de oliva",
+        "50 ml chicha de maíz (opcional, para sabor andino)"
+      ]
+    },
+    {
+      "section": "Salsa Criolla",
+      "items": [
+        "400 g tomates chontos maduros",
+        "2 dientes ajo asado",
+        "1 cdta orégano colombiano",
+        "1 cda pasta de ají amarillo",
+        "Sal y pimienta al gusto"
+      ]
+    },
+    {
+      "section": "Toppings Tradicionales",
+      "items": [
+        "300 g queso mozzarella rallado",
+        "200 g chorizo antioqueño en rodajas",
+        "1 taza choclo tierno desgranado",
+        "½ taza hogao colombiano",
+        "1 aguacate mediano en cubos",
+        "Hojas de cilantro fresco"
+      ]
+    },
+    {
+      "section": "Acabado Final",
+      "items": [
+        "Queso costeño rallado",
+        "Crema de leche fría",
+        "Limas para exprimir"
+      ]
+    }
+  ],
+  "instructions": [
+    "Prepara la masa: Disuelve levadura y azúcar en agua tibia. En un bol, mezcla harina y sal. Haz un volcán, añade líquidos y aceite. Amasa 10 min hasta elasticidad. Fermenta 1 hora en lugar cálido (cubre con paño húmedo).",
+    "Estira la masa: Divide en dos bolas. Extiende sobre harina de maíz hasta 0.5 cm de grosor. Haz bordes altos pinchando el centro con tenedor.",
+    "Precocina bases: Hornea masa 8 min a 220°C (solo base).",
+    "Prepara salsa: Licúa tomates, ajo, ají y orégano. Cocina 15 min a fuego bajo hasta espesar. Enfría.",
+    "Montaje: Unta salsa sobre bases. Distribuye chorizo, choclo y hogao. Cubre con mozzarella. Hornea 12 min a 240°C.",
+    "Toque final: Retira del horno. Añade aguacate y cilantro. Espolvorea queso costeño y hilos de crema. Sirve con gajos de lima."
+  ]
+}

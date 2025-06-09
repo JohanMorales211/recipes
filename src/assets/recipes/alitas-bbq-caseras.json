@@ -5,7 +5,7 @@
   "difficulty": "Fácil",
   "servings": "4 porciones",
   "time": "45 min",
-  "mainImageUrl": "https://i.postimg.cc/KjkJnrxr/imagen-principal.webp",
+  "mainImageUrl": "https://i.postimg.cc/KjkJnrxr/imagen-princcategoryipal.webp",
   "imageUrl": "https://i.postimg.cc/KjkJnrxr/imagen-principal.webp",
   "gallery": [
     "https://i.postimg.cc/hGcyHd1c/paso1.webp",
@@ -16,6 +16,7 @@
     "https://i.postimg.cc/HWrgSqL3/paso6.webp",
     "https://i.postimg.cc/KcCyC0kb/paso7.webp"
   ],
+  "category": "popular",
   "ingredients": [
     {
       "section": "Para sazonar las alitas:",

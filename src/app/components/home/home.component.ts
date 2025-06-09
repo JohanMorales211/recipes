@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { RecipeService } from '../../services/recipe.service';
 import { Recipe } from '../../models/recipe.model';
 import { Subscription } from 'rxjs';
@@ -12,14 +12,19 @@ export class HomeComponent implements OnInit, OnDestroy {
   
   isHowToUseVisible = false;
 
-  allPopularRecipes: Recipe[] = [];
-  visibleRecipes: Recipe[] = [];
-  isExpanded = false;
+  allRecipes: Recipe[] = []; 
+  popularRecipes: Recipe[] = [];
+  fastFoodRecipes: Recipe[] = [];
+  visibleRecipes: Recipe[] = []; 
+
+  public categoryExpansionState: { [key: string]: boolean } = {
+    popular: false,
+    'fast-food': false
+  };
 
   readonly initialDesktopCount = 6;
   readonly initialMobileCount = 4;
-  totalRecipes = 0;
-
+  
   searchTerm: string = '';
 
   private recipesSubscription: Subscription | undefined;
@@ -29,12 +34,13 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.recipesSubscription = this.recipeService.getAllRecipes().subscribe(
       (recipes: Recipe[]) => {
-        this.allPopularRecipes = recipes;
-        this.totalRecipes = this.allPopularRecipes.length;
-        this.updateDisplayedRecipes();
+        this.allRecipes = recipes;
+        
+        this.popularRecipes = this.allRecipes.filter(r => r.category === 'popular');
+        this.fastFoodRecipes = this.allRecipes.filter(r => r.category === 'fast-food');
       },
       error => {
-        console.error('Failed to load recipes in home component:', error);
+        console.error('Failed to load all recipes in home component:', error);
       }
     );
   }
@@ -49,32 +55,27 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.isHowToUseVisible = !this.isHowToUseVisible;
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: Event) {
-    if (!this.searchTerm) {
-      this.updateDisplayedRecipes();
+  toggleCategoryExpansion(category: string): void {
+    if (this.categoryExpansionState[category] !== undefined) {
+      this.categoryExpansionState[category] = !this.categoryExpansionState[category];
     }
   }
   
-  toggleRecipes(): void {
-    this.isExpanded = !this.isExpanded;
-    this.updateDisplayedRecipes();
+  getInitialCount(): number {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth >= 768 ? this.initialDesktopCount : this.initialMobileCount;
+    }
+    return this.initialDesktopCount; 
   }
 
   updateDisplayedRecipes(): void {
     if (this.searchTerm.trim() !== '') {
       const lowercasedTerm = this.searchTerm.toLowerCase().trim();
-      this.visibleRecipes = this.allPopularRecipes.filter(recipe =>
+      this.visibleRecipes = this.allRecipes.filter(recipe =>
         recipe.name.toLowerCase().includes(lowercasedTerm)
       );
     } else {
-      if (this.isExpanded) {
-        this.visibleRecipes = this.allPopularRecipes;
-      } else {
-        const isDesktop = window.innerWidth >= 768;
-        const count = isDesktop ? this.initialDesktopCount : this.initialMobileCount;
-        this.visibleRecipes = this.allPopularRecipes.slice(0, count);
-      }
+      this.visibleRecipes = []; 
     }
   }
 }
