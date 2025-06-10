@@ -47,9 +47,15 @@
     <div *ngIf="!searchTerm.trim()">
 
       <div *ngIf="popularRecipes.length > 0">
-        <h2 class="text-[#1c130d] text-xl md:text-[22px] font-bold leading-tight tracking-tight pb-3 pt-5">
-          Recetas Populares
-        </h2>
+        <div class="flex items-center gap-3 pt-5 pb-3">
+          <h2 class="text-[#1c130d] text-xl md:text-[22px] font-bold leading-tight tracking-tight">
+            Recetas Populares
+          </h2>
+          <span class="bg-[#FDE6D4] text-[#9c6c49] text-sm font-bold px-3 py-1 rounded-full border border-[#f4ece7]">
+            {{ popularRecipes.length }}
+          </span>
+        </div>
+
         <div class="grid justify-center recipe-grid gap-4 sm:gap-6 pb-4">
           <div *ngFor="let recipe of popularRecipes | slice:0:(categoryExpansionState['popular'] ? popularRecipes.length : getInitialCount())" 
                class="transform transition-transform duration-300 hover:-translate-y-2">
@@ -64,9 +70,15 @@
       </div>
 
       <div *ngIf="fastFoodRecipes.length > 0">
-        <h2 class="text-[#1c130d] text-xl md:text-[22px] font-bold leading-tight tracking-tight pb-3 pt-8">
-          Comidas Rápidas
-        </h2>
+        <div class="flex items-center gap-3 pt-8 pb-3">
+          <h2 class="text-[#1c130d] text-xl md:text-[22px] font-bold leading-tight tracking-tight">
+            Comidas Rápidas
+          </h2>
+          <span class="bg-[#FDE6D4] text-[#9c6c49] text-sm font-bold px-3 py-1 rounded-full border border-[#f4ece7]">
+            {{ fastFoodRecipes.length }}
+          </span>
+        </div>
+
         <div class="grid justify-center recipe-grid gap-4 sm:gap-6 pb-4">
           <div *ngFor="let recipe of fastFoodRecipes | slice:0:(categoryExpansionState['fast-food'] ? fastFoodRecipes.length : getInitialCount())" 
                class="transform transition-transform duration-300 hover:-translate-y-2">
@@ -75,7 +87,7 @@
         </div>
         <div *ngIf="fastFoodRecipes.length > getInitialCount()" class="mt-4 flex justify-center">
           <button (click)="toggleCategoryExpansion('fast-food')" class="bg-[#FDE6D4] text-[#1c130d] font-bold py-3 px-6 rounded-xl hover:bg-orange-200 transition-colors text-base shadow-md hover:shadow-lg">
-            {{ categoryExpansionState['fast-food'] ? 'Ver menos' : 'Ver menos' }}
+            {{ categoryExpansionState['fast-food'] ? 'Ver menos' : 'Ver más recetas' }}
           </button>
         </div>
       </div>
