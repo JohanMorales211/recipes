@@ -1,0 +1,68 @@
+{
+  "slug": "pizza-casera-pepperoni",
+  "name": "Pizza Casera de Pepperoni",
+  "description": "Una deliciosa pizza casera con masa fermentada, cubierta con una sabrosa salsa de tomate, abundante queso mozzarella y generosas rodajas de pepperoni. Un clásico que nunca falla.",
+  "difficulty": "Media",
+  "servings": "2 pizzas medianas (30 cm)",
+  "time": "2 horas (incluye fermentación)",
+  "mainImageUrl": "https://i.postimg.cc/kgXFXZDh/imagen-principal.webp",
+  "imageUrl": "https://i.postimg.cc/kgXFXZDh/imagen-principal.webp",
+  "gallery": [
+    "https://i.postimg.cc/GtFJHnk6/paso1.webp",
+    "https://i.postimg.cc/mZCSdC0V/paso2.webp",
+    "https://i.postimg.cc/02C0vx5w/paso3.webp",
+    "https://i.postimg.cc/gJ6KbZrz/paso4.webp",
+    "https://i.postimg.cc/FHWbfZLF/paso5.webp",
+    "https://i.postimg.cc/8cQmpzrh/paso6.webp"
+  ],
+  "category": "fast-food",
+  "ingredients": [
+    {
+      "section": "Masa para Pizza (fermento lento)",
+      "items": [
+        "500 g harina de trigo de fuerza (o 00)",
+        "300 ml agua tibia (38°C)",
+        "10 g sal fina",
+        "7 g levadura seca activa (o 20g fresca)",
+        "1 cda azúcar (o miel)",
+        "2 cdas aceite de oliva extra virgen"
+      ]
+    },
+    {
+      "section": "Salsa de Tomate Clásica",
+      "items": [
+        "400 g tomates maduros (o 1 lata de 400g de tomates triturados/pelados)",
+        "2 dientes de ajo picados finamente",
+        "1 cdta orégano seco",
+        "1 cda aceite de oliva",
+        "Sal y pimienta negra recién molida al gusto",
+        "1 pizca de azúcar (para balancear la acidez del tomate, opcional)"
+      ]
+    },
+    {
+      "section": "Toppings de Pepperoni",
+      "items": [
+        "300-400 g queso mozzarella rallado (idealmente bajo en humedad)",
+        "150-200 g pepperoni en rodajas finas",
+        "Queso parmesano rallado (opcional, para espolvorear)"
+      ]
+    },
+    {
+      "section": "Acabado Final (Opcional)",
+      "items": [
+        "Hojas de albahaca fresca",
+        "Un chorrito de aceite de oliva extra virgen",
+        "Hojuelas de pimiento rojo (red pepper flakes)"
+      ]
+    }
+  ],
+  "instructions": [
+    "Prepara la masa: Disuelve la levadura y el azúcar en el agua tibia. Deja reposar 5-10 minutos hasta que burbujee. En un bol grande, mezcla la harina y la sal. Haz un hueco en el centro y vierte la mezcla de levadura y el aceite de oliva. Mezcla hasta formar una masa. Amasa sobre una superficie ligeramente enharinada durante 10-12 minutos, hasta que esté suave y elástica. Forma una bola, colócala en un bol aceitado, cúbrela con un paño húmedo o film transparente y deja fermentar en un lugar cálido durante al menos 1 hora, o hasta que duplique su tamaño.",
+    "Prepara la salsa de tomate: Si usas tomates frescos, escáldalos, pélalos y tritúralos. En una cacerola pequeña, calienta 1 cda de aceite de oliva y sofríe el ajo picado hasta que esté fragante (cuidado de no quemarlo). Añade el tomate triturado, orégano, sal, pimienta y la pizca de azúcar (si la usas). Cocina a fuego bajo durante 15-20 minutos, removiendo ocasionalmente, hasta que la salsa haya espesado ligeramente. Deja enfriar.",
+    "Precalienta el horno y prepara la masa: Precalienta el horno a la temperatura más alta que alcance (idealmente 230-250°C o 450-475°F). Si tienes una piedra para pizza, colócala en el horno mientras se precalienta. Desgasifica la masa suavemente y divídela en dos bolas iguales. Sobre una superficie ligeramente enharinada (puedes usar harina de maíz o sémola para una base más crujiente), extiende cada bola de masa con un rodillo o con las manos hasta formar un círculo de unos 30 cm de diámetro y 0.5 cm de grosor. Crea un borde ligeramente más grueso.",
+    "Precocina las bases (opcional pero recomendado): Coloca las bases de pizza en bandejas de horno ligeramente enharinadas o sobre papel de hornear. Pincha el centro varias veces con un tenedor (esto evita que se infle demasiado). Hornea las bases durante 5-7 minutos (solo la masa), hasta que estén ligeramente firmes pero no doradas.",
+    "Montaje de la pizza: Retira las bases precocidas del horno (si las hiciste). Unta una capa uniforme de salsa de tomate sobre cada base, dejando el borde libre. Distribuye generosamente el queso mozzarella rallado por encima. Coloca las rodajas de pepperoni sobre el queso.",
+    "Hornea la pizza: Hornea las pizzas durante 10-15 minutos (el tiempo puede variar según tu horno y la temperatura), o hasta que la masa esté dorada y crujiente, y el queso burbujeante y ligeramente dorado. Si usas piedra de pizza, desliza la pizza directamente sobre la piedra caliente.",
+    "Toque final: Retira las pizzas del horno. Si lo deseas, espolvorea con queso parmesano rallado, decora con hojas de albahaca fresca y/o unas hojuelas de pimiento rojo. Un chorrito de aceite de oliva extra virgen por encima también es un buen toque. Corta en porciones y sirve inmediatamente."
+  ]
+}

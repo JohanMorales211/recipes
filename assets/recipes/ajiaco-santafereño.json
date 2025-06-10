@@ -1,0 +1,53 @@
+{
+  "slug": "ajiaco-santafereño",
+  "name": "Ajiaco Santafereño",
+  "description": "La sopa insignia de Bogotá. Una reconfortante y compleja mezcla de pollo, tres tipos de papa y el inconfundible sabor de las guascas. Se sirve con crema, alcaparras y aguacate.",
+  "difficulty": "Media",
+  "servings": "6 porciones",
+  "time": "1 hora 50 min",
+  "mainImageUrl": "https://i.postimg.cc/NfFb0z89/imagen-principal.jpg",
+  "imageUrl": "https://i.postimg.cc/NfFb0z89/imagen-principal.jpg",
+  "gallery": [
+    "https://i.postimg.cc/wB8k0xCL/paso1.png",
+    "https://i.postimg.cc/G2bxn7hp/paso2.png",
+    "https://i.postimg.cc/KvWf3DQ9/paso3.png",
+    "https://i.postimg.cc/hGL1wWnw/paso4.png",
+    "https://i.postimg.cc/JzBqNH2R/paso5.png"
+  ],
+  "category": "popular",
+  "ingredients": [
+    {
+      "section": "Para la Sopa",
+      "items": [
+        "4 pechugas de pollo con hueso (800 g)",
+        "3.5 litros de agua",
+        "2 cubos de caldo de pollo",
+        "3 mazorcas de maíz tierno, partidas en trozos",
+        "3 ramas de cebolla larga (cebollín)",
+        "3 dientes de ajo machacados",
+        "400 g papas criollas (peladas, rodajas finas)",
+        "600 g papas pastusas (peladas, rodajas gruesas)",
+        "600 g papas sabaneras (peladas, rodajas gruesas)",
+        "1 manojo grande de guascas frescas",
+        "Sal y pimienta negra al gusto"
+      ]
+    },
+    {
+      "section": "Para Servir",
+      "items": [
+        "1 taza de crema de leche fría",
+        "½ taza de alcaparras en vinagre",
+        "2 aguacates maduros en cubos",
+        "Arroz blanco cocido (opcional)"
+      ]
+    }
+  ],
+  "instructions": [
+    "Prepara el caldo: En olla grande, hierve agua con pollo, mazorcas, cebolla larga, ajo, cubos de caldo, sal y pimienta. Cocina 40 min a fuego medio hasta que el pollo esté tierno.",
+    "Retira el pollo y desmenúzalo: Saca las pechugas, deshuésalas y desméchalas en tiras gruesas. Reserva el caldo y las mazorcas.",
+    "Cocina las papas: Al caldo, añade papas pastusas y sabaneras. Hierve 45 min hasta que empiecen a deshacerse.",
+    "Espesa la sopa: Agrega papas criollas y guascas. Cocina 20 min. Para más cremosidad, retira 1½ taza de papas, tritúralas y vuélvelas a integrar.",
+    "Integra finales: Regresa el pollo desmenuzado y las mazorcas a la olla. Cocina 10 min más. Rectifica sal y pimienta.",
+    "Sirve tradicionalmente: En cada plato, añade crema en hilo, alcaparras y aguacate. Acompaña con arroz blanco si deseas."
+  ]
+}

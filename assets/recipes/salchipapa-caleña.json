@@ -1,0 +1,64 @@
+{
+  "slug": "salchipapa-caleña",
+  "name": "Salchipapa Caleña",
+  "description": "Icono callejero de Cali, papas criollas con cáscara, una mezcla de salchichas caramelizadas, chorizo, tocineta crujiente, quesos fundidos y el toque dulce de salsa de piña. Opcionalmente coronada con huevos de codorniz, más salsas y texturas. Un caos delicioso que define la comida rápida colombiana en su máxima expresión.",
+  "difficulty": "Fácil",
+  "servings": "4 porciones generosas",
+  "time": "45-50 minutos",
+  "mainImageUrl": "https://i.postimg.cc/cC7n14d8/imagen-principal.webp",
+  "imageUrl": "https://i.postimg.cc/cC7n14d8/imagen-principal.webp",
+  "gallery": [
+    "https://i.postimg.cc/wBPJ0GW3/paso1.webp",
+    "https://i.postimg.cc/gJZh5H5s/paso2.webp",
+    "https://i.postimg.cc/tJG6HVGj/paso3.webp",
+    "https://i.postimg.cc/1z4w0QrL/paso4.webp"
+  ],
+  "category": "fast-food",
+  "ingredients": [
+    {
+      "section": "Base Esencial y Carnes",
+      "items": [
+        "15 papas criollas medianas (con cáscara, lavadas)",
+        "4 salchichas tipo Viena (ternera/pollo)",
+        "100 g de tocineta en tiras",
+        "1 chorizo artesanal, en rodajas (opcional)",
+        "100 g de pechuga de pollo cocida y desmechada (opcional, para calentar)",
+        "Aceite vegetal para freír",
+        "Sal al gusto"
+      ]
+    },
+    {
+      "section": "Coberturas Tradicionales y Adicionales",
+      "items": [
+        "100 g de queso mozzarella rallado (o queso costeño rallado, o una mezcla de ambos)",
+        "50 ml de salsa de piña casera",
+        "50 ml de salsa de tomate",
+        "30 ml de mostaza amarilla",
+        "Salsa rosada al gusto (opcional)",
+        "Mayonesa de ajo al gusto (opcional)",
+        "Guacamole fresco al gusto (opcional, en pequeñas porciones)",
+        "¼ taza de maíz dulce cocido (opcional)",
+        "8-12 huevos de codorniz cocidos y pelados (opcional)",
+        "Chicharrón triturado (opcional, estilo Kingpapa)",
+        "¼ taza de papas fosforito (ripio de papa) (opcional)"
+      ]
+    },
+    {
+      "section": "Para la Salsa de Piña (casera)",
+      "items": [
+        "½ piña madura picada",
+        "2 cucharadas de azúcar morena",
+        "1 cucharada de vinagre blanco",
+        "¼ cucharadita de canela molida"
+      ]
+    }
+  ],
+  "instructions": [
+    "Prepara las papas: Corta las papas criollas por la mitad (¡no las peles!). Sumérgelas 10 minutos en agua con sal para eliminar almidón. Seca muy bien con un paño limpio.",
+    "Fríe las papas: Calienta abundante aceite en una olla o freidora a 175°C (350°F). Fríe las papas por tandas durante 8-10 minutos, o hasta que estén bien doradas y crujientes por fuera y suaves por dentro. Escúrrelas sobre papel absorbente y sálalas inmediatamente.",
+    "Cocina las carnes: En sartén aparte a fuego medio, fríe la tocineta hasta crujiente (6-8 min). Retira y escurre. Si usas chorizo, en la misma grasa, fríe las rodajas hasta dorar (5-7 min). Retira. Corta salchichas en rodajas diagonales y dóralas 4 min. Retira. Si usas pollo desmechado, caliéntalo ligeramente.",
+    "Haz la salsa de piña: Licúa piña, azúcar, vinagre y canela. Cocina a fuego bajo 5-7 min hasta espesar. Enfría.",
+    "Montaje estilo Cali 'Con Todo': En bandeja honda, coloca papas como base. Distribuye salchichas, tocineta, chorizo (si usas) y pollo (si usas). Cubre con queso mozzarella (o costeño/mezcla). Añade huevos de codorniz (si usas).",
+    "Añade salsas y toppings finales: Zigzaguea salsa de tomate, mostaza y salsa de piña. Añade salsa rosada, mayonesa de ajo o guacamole (opcional). Espolvorea maíz dulce (opcional), chicharrón triturado (opcional) y/o papas fosforito (opcional). ¡Sirve inmediatamente!"
+  ]
+}

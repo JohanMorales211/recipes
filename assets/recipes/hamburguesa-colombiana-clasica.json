@@ -1,0 +1,59 @@
+{
+  "slug": "hamburguesa-colombiana-clasica",
+  "name": "Hamburguesa Clásica",
+  "description": "La versión auténtica de las fondas bogotanas y parrillas antioqueñas. Carne de res sazonada con hierbas, acompañada de los toppings esenciales: queso, lechuga, tomate y cebolla caramelizada. Simple, sabrosa y sin complicaciones.",
+  "difficulty": "Fácil",
+  "servings": "4 hamburguesas",
+  "time": "30 minutos",
+  "mainImageUrl": "https://i.postimg.cc/9QnWv5yP/paso6.webp",
+  "imageUrl": "https://i.postimg.cc/9QnWv5yP/paso6.webp",
+  "gallery": [
+    "https://i.postimg.cc/htjDyPQP/paso1.webp",
+    "https://i.postimg.cc/yN3VKQTM/paso2.webp",
+    "https://i.postimg.cc/ZRkJ587C/paso3.webp",
+    "https://i.postimg.cc/FzNmj9Qv/paso4.webp",
+    "https://i.postimg.cc/KjfbfdZM/paso5.webp",
+    "https://i.postimg.cc/9QnWv5yP/paso6.webp"
+  ],
+  "category": "fast-food",
+  "ingredients": [
+    {
+      "section": "Para las Hamburguesas",
+      "items": [
+        "600 g de carne molida de res (15-20% grasa)",
+        "1 cebolla cabezona pequeña picada fina",
+        "2 dientes de ajo machacados",
+        "1 cucharadita de comino molido",
+        "1 cucharadita de orégano seco",
+        "Sal y pimienta al gusto",
+        "2 cucharadas de aceite vegetal"
+      ]
+    },
+    {
+      "section": "Toppings Tradicionales",
+      "items": [
+        "4 rebanadas de queso mozzarella o costeño",
+        "4 panes para hamburguesa (preferiblemente integrales)",
+        "1 lechuga crespa deshojada",
+        "2 tomates chontos en rodajas",
+        "1 cebolla blanca en aros",
+        "Salsas: mayonesa y ají (opcional)"
+      ]
+    },
+    {
+      "section": "Tocineta (Opcional)",
+      "items": [
+        "8 lonchas finas de tocineta ahumada"
+      ]
+    }
+  ],
+  "instructions": [
+    "Mezcla la carne: En un bol grande, combina carne molida, cebolla, ajo, comino, orégano, sal y pimienta. Mezcla suavemente con las manos (no sobreamasar).",
+    "Forma las hamburguesas: Divide en 4 porciones iguales. Forma discos de 2 cm de grosor. Refrigera 10 minutos para que mantengan forma.",
+    "Prepara toppings: Lava y desinfecta verduras. Si prefieres cebolla caramelizada: saltea aros de cebolla con aceite a fuego lento 15 min hasta dorar.",
+    "Cocina las hamburguesas: Calienta aceite en sartén a fuego medio-alto. Cocina 5-6 min por lado para punto medio. En el último minuto, coloca queso encima para que se derrita.",
+    "Tocineta opcional: Fríe en sartén separada hasta crujiente. Escurre en papel absorbente.",
+    "Arma las hamburguesas: Tuesta ligeramente los panes. Unta mayonesa en base. Coloca lechuga, hamburguesa con queso, tomate, cebolla (cruda o caramelizada) y tocineta si usas. Tapa con salsa de ají si deseas.",
+    "Sirve inmediatamente con papas fritas o patacones."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "frijoles-colombianos-tradicionales",
+  "name": "Frijoles Colombianos Tradicionales",
+  "description": "Una receta clásica y reconfortante que te transportará al corazón de Colombia. Aprende a preparar unos frijoles cremosos y llenos de sabor, la base perfecta para la famosa bandeja paisa o para disfrutarlos solos.",
+  "difficulty": "Fácil",
+  "servings": "6 porciones",
+  "time": "2 horas 30 min (más 12 horas de remojo)",
+  "mainImageUrl": "https://i.postimg.cc/qvBVKqzb/imagen-principal.webp",
+  "imageUrl": "https://i.postimg.cc/qvBVKqzb/imagen-principal.webp",
+  "gallery": [
+    "https://i.postimg.cc/CKd3v2Cb/paso1.webp",
+    "https://i.postimg.cc/13WxrSF9/paso2.webp",
+    "https://i.postimg.cc/vHtwDfHx/paso3.webp",
+    "https://i.postimg.cc/8C3qxbw9/paso4.webp",
+    "https://i.postimg.cc/vBVpy6NB/paso5.webp",
+    "https://i.postimg.cc/hvRNtPk0/paso6.webp"
+  ],
+  "category": "popular",
+  "ingredients": [
+    {
+      "section": "Para los Frijoles:",
+      "items": [
+        "500 gr de frijoles rojos o cargamanto.",
+        "2 litros de agua.",
+        "1 plátano verde (para espesar) o maduro (para dar dulzor), picado.",
+        "1 zanahoria grande, pelada y rallada.",
+        "200 gr de tocino o costilla de cerdo (opcional).",
+        "1 libra de pezuña de cerdo (opcional)."
+      ]
+    },
+    {
+      "section": "Para el Sofrito (Hogao):",
+      "items": [
+        "1 cebolla grande, picada.",
+        "2 tomates maduros, pelados y picados.",
+        "3 dientes de ajo, picados.",
+        "2 cucharadas de aceite vegetal.",
+        "1 cucharadita de comino en polvo.",
+        "Sal y pimienta al gusto."
+      ]
+    },
+    {
+      "section": "Para finalizar (opcional):",
+      "items": [
+        "Cilantro fresco picado al gusto."
+      ]
+    }
+  ],
+  "instructions": [
+    "La noche anterior, pon los frijoles en un recipiente grande, cúbrelos con abundante agua y déjalos en remojo por un mínimo de 12 horas.",
+    "Al día siguiente, escurre y enjuaga los frijoles. Ponlos en una olla a presión o una olla grande con 2 litros de agua fresca y la pezuña de cerdo (si la usas).",
+    "Lleva a ebullición y cocina hasta que los frijoles estén casi blandos. En olla a presión puede tomar entre 45 y 60 minutos, mientras que en una olla convencional puede tardar hasta 2 horas.",
+    "Mientras, prepara el sofrito (hogao): calienta el aceite en una sartén a fuego medio, sofríe la cebolla y el ajo hasta que estén transparentes. Añade el tomate, comino, sal y pimienta, y cocina unos 10 minutos.",
+    "Cuando los frijoles estén casi listos, agrega el plátano picado, la zanahoria rallada, el tocino/costilla y la mitad del hogao.",
+    "Cocina a fuego bajo, removiendo ocasionalmente, hasta que el caldo espese a tu gusto. El plátano se deshará, aportando una textura cremosa.",
+    "Incorpora el resto del hogao. Para mayor cremosidad, puedes licuar un cucharón de frijoles y devolverlo a la olla. Justo antes de servir, añade el cilantro fresco picado."
+  ]
+}

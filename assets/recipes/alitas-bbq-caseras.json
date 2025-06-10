@@ -1,0 +1,54 @@
+{
+  "slug": "alitas-bbq-caseras",
+  "name": "Alitas BBQ Caseras",
+  "description": "Una receta clásica y deliciosa para preparar alitas de pollo con una salsa barbacoa casera, perfectas para cualquier ocasión. Quedan jugosas por dentro y con un exterior caramelizado y lleno de sabor.",
+  "difficulty": "Fácil",
+  "servings": "4 porciones",
+  "time": "45 min",
+  "mainImageUrl": "https://i.postimg.cc/KjkJnrxr/imagen-principal.webp",
+  "imageUrl": "https://i.postimg.cc/KjkJnrxr/imagen-principal.webp",
+  "gallery": [
+    "https://i.postimg.cc/hGcyHd1c/paso1.webp",
+    "https://i.postimg.cc/Y9SXSBPP/paso2.webp",
+    "https://i.postimg.cc/fTXhsYm9/paso3.webp",
+    "https://i.postimg.cc/wjh4fVJw/paso4.webp",
+    "https://i.postimg.cc/QC2SS9ML/paso5.webp",
+    "https://i.postimg.cc/HWrgSqL3/paso6.webp",
+    "https://i.postimg.cc/KcCyC0kb/paso7.webp"
+  ],
+  "category": "popular",
+  "ingredients": [
+    {
+      "section": "Para sazonar las alitas:",
+      "items": [
+        "1 kg de alitas de pollo",
+        "Sal y pimienta al gusto",
+        "½ cucharadita de ajo en polvo",
+        "½ cucharadita de pimentón (paprika)",
+        "Harina de trigo (opcional para freír)"
+      ]
+    },
+    {
+      "section": "Para la salsa BBQ casera:",
+      "items": [
+        "1 taza de salsa de tomate (kétchup)",
+        "2 cucharadas de miel",
+        "1 cucharadita de mostaza",
+        "2 cucharadas de azúcar",
+        "1 cucharadita de pimentón (paprika)",
+        "1 cucharadita de ajo en polvo",
+        "3 cucharadas de vinagre",
+        "3 cucharadas de salsa inglesa"
+      ]
+    }
+  ],
+  "instructions": [
+    "Lava bien las alitas de pollo y sécalas con papel de cocina. Opcionalmente, puedes cortarles la punta y separarlas en dos piezas.",
+    "En un bol grande, sazona las alitas con sal, pimienta, el ajo en polvo y el pimentón. Mezcla bien para que se impregnen y deja marinar al menos 15 minutos.",
+    "Para cocinar las alitas, elige una opción: A) Fritas: Pásalas por harina y fríelas en aceite caliente hasta que estén doradas. B) Al horno: Precalienta el horno a 200°C y hornéalas por 25-30 minutos, dándoles la vuelta a mitad de cocción.",
+    "Mientras se cocinan las alitas, prepara la salsa. En una olla a fuego medio, combina todos los ingredientes de la salsa BBQ (kétchup, miel, mostaza, azúcar, pimentón, ajo en polvo, vinagre y salsa inglesa).",
+    "Lleva la salsa a ebullición y luego baja el fuego. Deja que hierva suavemente durante unos 10-15 minutos, removiendo de vez en cuando, hasta que la salsa espese un poco.",
+    "Cuando las alitas estén cocidas y crujientes, ponlas en un bol grande y limpio. Vierte la salsa BBQ caliente sobre ellas.",
+    "Mezcla todo con cuidado hasta que cada alita esté perfectamente cubierta con la salsa. Sírvelas inmediatamente para disfrutar de todo su sabor y textura."
+  ]
+}

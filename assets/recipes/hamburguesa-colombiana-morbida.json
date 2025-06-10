@@ -1,0 +1,65 @@
+{
+  "slug": "hamburguesa-colombiana-morbida",
+  "name": "Hamburguesa 'La Morbida'",
+  "description": "Fusión gourmet de sabores andinos. Carne de res y cerdo con toques de hogao, coronada con guacamole criollo y tocineta crujiente. Una explosión de texturas donde lo tradicional abraza lo moderno.",
+  "difficulty": "Media",
+  "servings": "4 hamburguesas",
+  "time": "50 minutos",
+  "mainImageUrl": "https://i.postimg.cc/3JBXg57J/imagen-principal.webp",
+  "imageUrl": "https://i.postimg.cc/3JBXg57J/imagen-principal.webp",
+  "gallery": [
+    "https://i.postimg.cc/Znz8LJC0/paso1.webp",
+    "https://i.postimg.cc/d3R8Hgy6/paso2.webp",
+    "https://i.postimg.cc/sggpm6DP/paso3.webp",
+    "https://i.postimg.cc/yYBhg6Mb/paso4.webp",
+    "https://i.postimg.cc/QNckdKy7/paso5.webp"
+  ],
+  "category": "fast-food",
+  "ingredients": [
+    {
+      "section": "Para las Hamburguesas (extra jugosas)",
+      "items": [
+        "400 g de carne molida de res (20% grasa)",
+        "200 g de carne molida de cerdo",
+        "1 cebolla cabezona pequeña rallada",
+        "2 cdas de hogao colombiano (ver receta anterior)",
+        "1 cda de pan molido remojado en leche",
+        "1 yema de huevo",
+        "1 cdta de salsa inglesa",
+        "1 cdta de comino molido",
+        "Sal gruesa y pimienta negra al gusto"
+      ]
+    },
+    {
+      "section": "Guacamole Criollo",
+      "items": [
+        "2 aguacates Hass maduros",
+        "1 tomate perita sin semillas picado",
+        "¼ cebolla morada picada fina",
+        "Jugo de 1 limón mandarino",
+        "Cilantro fresco picado",
+        "Ají picante al gusto (opcional)"
+      ]
+    },
+    {
+      "section": "Montaje y Acompañamiento",
+      "items": [
+        "8 lonchas de tocineta ahumada",
+        "4 rebanadas gruesas de queso costeño o mozzarella",
+        "4 panes brioche o arepas de queso",
+        "Hojas de lechuga crespa",
+        "Rodajas de tomate chonto",
+        "Papas criollas fritas o patacones"
+      ]
+    }
+  ],
+  "instructions": [
+    "Prepara la mezcla: En un bol, combina carnes, cebolla rallada, hogao, pan remojado, yema, salsa inglesa y especias. Mezcla con tenedor (¡nunca amases!). Refrigera 20 min.",
+    "Forma las hamburguesas: Divide en 4 porciones (≈150 g). Forma bolas ligeras, luego aplasta hasta 2.5 cm de grosor (más gruesas = más jugosas). Haz un hoyo en el centro para evitar abombamiento.",
+    "Cocina la carne: Sella en sartén con aceite 4 min por lado a fuego fuerte. Baja el fuego, tapa y cocina 3 min más. Añade queso los últimos 30 segundos.",
+    "Tocineta crujiente: Fríe en sartén separada hasta dorar. Escurre sobre papel absorbente.",
+    "Guacamole: Machaca aguacates con tenedor. Mezcla con tomate, cebolla, cilantro, jugo de limón y sal.",
+    "Montaje final: Tuesta panes. Unta guacamole en base. Coloca lechuga, hamburguesa con queso, tocineta, tomate y tapa con más guacamole.",
+    "Acompaña con papas criollas fritas o patacones."
+  ]
+}

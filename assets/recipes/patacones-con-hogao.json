@@ -1,0 +1,59 @@
+{
+  "slug": "patacones-con-hogao",
+  "name": "Patacones con Hogao",
+  "description": "Clásico antioqueño y caribeño. Plátanos verdes fritos dos veces para lograr máxima crujiencia, coronados con hogao: salsa de tomate, cebolla larga y especias. Acompañamiento estrella de pescados, carnes o snack para compartir.",
+  "difficulty": "Media",
+  "servings": "4 porciones",
+  "time": "50 minutos",
+  "mainImageUrl": "https://i.postimg.cc/NftpwkbS/imagen-principal.webp",
+  "imageUrl": "https://i.postimg.cc/NftpwkbS/imagen-principal.webp",
+  "gallery": [
+    "https://i.postimg.cc/KjPfM1c0/paso1.webp",
+    "https://i.postimg.cc/wM8FMXzt/paso2.webp",
+    "https://i.postimg.cc/XJyQn2RS/paso3.webp",
+    "https://i.postimg.cc/6QPMJs1f/paso4.webp",
+    "https://i.postimg.cc/7P0mcW1S/paso5.webp"
+  ],
+  "category": "popular",
+  "ingredients": [
+    {
+      "section": "Para los Patacones",
+      "items": [
+        "4 plátanos verdes grandes (piel totalmente verde, sin amarillo)",
+        "Aceite vegetal (cantidad suficiente para freír)",
+        "1 cucharadita de sal",
+        "1 pizca de bicarbonato (opcional, para extra crujientes)"
+      ]
+    },
+    {
+      "section": "Para el Hogao Tradicional",
+      "items": [
+        "4 tomates Roma maduros (≈500 g)",
+        "1 cebolla blanca grande picada",
+        "1 taza de cebolla larga (cebollín) picada",
+        "3 dientes de ajo machacados",
+        "2 cucharadas de aceite vegetal o manteca",
+        "1 cucharadita de comino molido",
+        "1/2 cucharadita de achiote en polvo (color)",
+        "Sal y pimienta al gusto",
+        "1/4 taza de cilantro fresco picado (opcional)"
+      ]
+    },
+    {
+      "section": "Para Servir (Opcional)",
+      "items": [
+        "Queso costeño rallado",
+        "Aguacate en cubos",
+        "Suero costeño"
+      ]
+    }
+  ],
+  "instructions": [
+    "Preparar plátanos: Pela los plátanos cortando los extremos y haciendo un corte longitudinal para retirar la cáscara. Córtalos en rodajas de 3-4 cm de grosor.",
+    "Primera fritura: Calienta aceite (350°F/175°C) en sartén hondo. Fríe las rodajas 5-6 min hasta que estén blandas pero no doradas. Escurre sobre papel absorbente.",
+    "Aplanar: Coloca cada rodaja entre dos superficies planas (pataconera, plato o tabla cubierta con plástico). Aplasta hasta 0.5 cm de grosor con movimiento firme y rápido para evitar que se rompan.",
+    "Segunda fritura: Sube el aceite a 375°F (190°C). Fríe los patacones aplastados 2-3 min por lado hasta dorar. Escurre, espolvorea sal y bicarbonato si usas.",
+    "Hacer hogao: En otra sartén, calienta aceite. Sofríe cebolla blanca, cebolla larga y ajo 3 min. Añade tomates sin piel ni semillas (picados), comino, achiote, sal y pimienta. Cocina 15 min a fuego bajo hasta espesar. Incorpora cilantro al final.",
+    "Servir: Coloca patacones calientes, baña con hogao. Acompaña con queso costeño, aguacate o suero. ¡Consume inmediatamente para mantener textura crujiente!"
+  ]
+}
