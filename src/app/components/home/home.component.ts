@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   
   isHowToUseVisible = false;
 
-  openAssistantInfoSound = new Audio('assets/audio/abrir-conoce-asistente.mp3');
+  openAssistantInfoSound = new Audio('assets/audio/abrir-asistente.mp3');
 
   allRecipes: Recipe[] = []; 
   popularRecipes: Recipe[] = [];
