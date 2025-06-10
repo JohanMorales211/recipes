@@ -18,8 +18,6 @@ export class RecipeService {
     'perro-caliente-colombiano',
     'salchipapa-caleña',
     'ajiaco-santafereño',
-    'bandeja-paisa',
-    'arepas-colombianas-con-queso',
     'patacones-con-hogao',
     'pizza-casera'
   ];

@@ -5,12 +5,14 @@
   "difficulty": "Media",
   "servings": "4 porciones",
   "time": "50 minutos",
-  "mainImageUrl": "https://i.postimg.cc/8z2ZbJ4G/patacones-main.webp",
-  "imageUrl": "https://i.postimg.cc/8z2ZbJ4G/patacones-main.webp",
+  "mainImageUrl": "https://i.postimg.cc/NftpwkbS/imagen-principal.webp",
+  "imageUrl": "https://i.postimg.cc/NftpwkbS/imagen-principal.webp",
   "gallery": [
-    "https://i.postimg.cc/2jXhY1v8/patacones-gallery-1.webp",
-    "https://i.postimg.cc/8P8WwRwQ/patacones-gallery-2.webp",
-    "https://i.postimg.cc/0jMZb6G1/patacones-gallery-3.webp"
+    "https://i.postimg.cc/KjPfM1c0/paso1.webp",
+    "https://i.postimg.cc/wM8FMXzt/paso2.webp",
+    "https://i.postimg.cc/XJyQn2RS/paso3.webp",
+    "https://i.postimg.cc/6QPMJs1f/paso4.webp",
+    "https://i.postimg.cc/7P0mcW1S/paso5.webp"
   ],
   "category": "popular",
   "ingredients": [
@@ -47,11 +49,11 @@
     }
   ],
   "instructions": [
-    "Preparar plátanos: Pela los plátanos cortando los extremos y haciendo un corte longitudinal para retirar la cáscara. Córtalos en rodajas de 3-4 cm de grosor :cite[3]:cite[8].",
-    "Primera fritura: Calienta aceite (350°F/175°C) en sartén hondo. Fríe las rodajas 5-6 min hasta que estén blandas pero no doradas. Escurre sobre papel absorbente :cite[2]:cite[3].",
-    "Aplanar: Coloca cada rodaja entre dos superficies planas (pataconera, plato o tabla cubierta con plástico). Aplasta hasta 0.5 cm de grosor con movimiento firme y rápido para evitar que se rompan :cite[1]:cite[6].",
-    "Segunda fritura: Sube el aceite a 375°F (190°C). Fríe los patacones aplastados 2-3 min por lado hasta dorar. Escurre, espolvorea sal y bicarbonato si usas :cite[3]:cite[8].",
-    "Hacer hogao: En otra sartén, calienta aceite. Sofríe cebolla blanca, cebolla larga y ajo 3 min. Añade tomates sin piel ni semillas (picados), comino, achiote, sal y pimienta. Cocina 15 min a fuego bajo hasta espesar. Incorpora cilantro al final :cite[1]:cite[5]:cite[7].",
-    "Servir: Coloca patacones calientes, baña con hogao. Acompaña con queso costeño, aguacate o suero. ¡Consume inmediatamente para mantener textura crujiente! :cite[1]:cite[7]"
+    "Preparar plátanos: Pela los plátanos cortando los extremos y haciendo un corte longitudinal para retirar la cáscara. Córtalos en rodajas de 3-4 cm de grosor.",
+    "Primera fritura: Calienta aceite (350°F/175°C) en sartén hondo. Fríe las rodajas 5-6 min hasta que estén blandas pero no doradas. Escurre sobre papel absorbente.",
+    "Aplanar: Coloca cada rodaja entre dos superficies planas (pataconera, plato o tabla cubierta con plástico). Aplasta hasta 0.5 cm de grosor con movimiento firme y rápido para evitar que se rompan.",
+    "Segunda fritura: Sube el aceite a 375°F (190°C). Fríe los patacones aplastados 2-3 min por lado hasta dorar. Escurre, espolvorea sal y bicarbonato si usas.",
+    "Hacer hogao: En otra sartén, calienta aceite. Sofríe cebolla blanca, cebolla larga y ajo 3 min. Añade tomates sin piel ni semillas (picados), comino, achiote, sal y pimienta. Cocina 15 min a fuego bajo hasta espesar. Incorpora cilantro al final.",
+    "Servir: Coloca patacones calientes, baña con hogao. Acompaña con queso costeño, aguacate o suero. ¡Consume inmediatamente para mantener textura crujiente!"
   ]
 }

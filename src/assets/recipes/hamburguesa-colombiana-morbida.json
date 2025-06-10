@@ -5,12 +5,14 @@
   "difficulty": "Media",
   "servings": "4 hamburguesas",
   "time": "50 minutos",
-  "mainImageUrl": "https://i.postimg.cc/8z2ZbJ4G/hamburguesa-main.webp",
-  "imageUrl": "https://i.postimg.cc/8z2ZbJ4G/hamburguesa-main.webp",
+  "mainImageUrl": "https://i.postimg.cc/3JBXg57J/imagen-principal.webp",
+  "imageUrl": "https://i.postimg.cc/3JBXg57J/imagen-principal.webp",
   "gallery": [
-    "https://i.postimg.cc/2jXhY1v8/hamburguesa-gallery-1.webp",
-    "https://i.postimg.cc/8P8WwRwQ/hamburguesa-gallery-2.webp",
-    "https://i.postimg.cc/0jMZb6G1/hamburguesa-gallery-3.webp"
+    "https://i.postimg.cc/Znz8LJC0/paso1.webp",
+    "https://i.postimg.cc/d3R8Hgy6/paso2.webp",
+    "https://i.postimg.cc/sggpm6DP/paso3.webp",
+    "https://i.postimg.cc/yYBhg6Mb/paso4.webp",
+    "https://i.postimg.cc/QNckdKy7/paso5.webp"
   ],
   "category": "fast-food",
   "ingredients": [

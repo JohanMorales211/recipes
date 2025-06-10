@@ -5,13 +5,14 @@
   "difficulty": "Media",
   "servings": "6 porciones",
   "time": "1 hora 50 min",
-  "mainImageUrl": "https://i.postimg.cc/pT3YkmC2/ajiaco-main.webp",
-  "imageUrl": "https://i.postimg.cc/pT3YkmC2/ajiaco-main.webp",
+  "mainImageUrl": "https://i.postimg.cc/NfFb0z89/imagen-principal.jpg",
+  "imageUrl": "https://i.postimg.cc/NfFb0z89/imagen-principal.jpg",
   "gallery": [
-    "https://i.postimg.cc/9F0M7s0c/ajiaco-gallery-1.webp",
-    "https://i.postimg.cc/W35kL9z1/ajiaco-gallery-2.webp",
-    "https://i.postimg.cc/HnwvC9V6/ajiaco-gallery-3.webp",
-    "https://i.postimg.cc/zX8s8yTN/ajiaco-gallery-4.webp"
+    "https://i.postimg.cc/wB8k0xCL/paso1.png",
+    "https://i.postimg.cc/G2bxn7hp/paso2.png",
+    "https://i.postimg.cc/KvWf3DQ9/paso3.png",
+    "https://i.postimg.cc/hGL1wWnw/paso4.png",
+    "https://i.postimg.cc/JzBqNH2R/paso5.png"
   ],
   "category": "popular",
   "ingredients": [
