@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RecipeService } from '../../services/recipe.service';
 import { Recipe } from '../../models/recipe.model';
 import { Subscription } from 'rxjs';
@@ -11,6 +11,8 @@ import { Subscription } from 'rxjs';
 export class HomeComponent implements OnInit, OnDestroy {
   
   isHowToUseVisible = false;
+
+  openAssistantInfoSound = new Audio('assets/audio/abrir-conoce-asistente.mp3');
 
   allRecipes: Recipe[] = []; 
   popularRecipes: Recipe[] = [];
@@ -29,7 +31,9 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   private recipesSubscription: Subscription | undefined;
 
-  constructor(private recipeService: RecipeService) {}
+  constructor(private recipeService: RecipeService) {
+    this.openAssistantInfoSound.volume = 0.5;
+  }
 
   ngOnInit(): void {
     this.recipesSubscription = this.recipeService.getAllRecipes().subscribe(
@@ -52,6 +56,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   toggleHowToUse(): void {
+    if (!this.isHowToUseVisible) {
+      this.openAssistantInfoSound.currentTime = 0;
+      this.openAssistantInfoSound.play();
+    }
+
     this.isHowToUseVisible = !this.isHowToUseVisible;
   }
 

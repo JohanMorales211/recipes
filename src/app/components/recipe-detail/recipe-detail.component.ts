@@ -13,6 +13,9 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
 
   recipe: Recipe | undefined;
   
+  pageChangeSound = new Audio('assets/audio/cambiar-pagina.mp3');
+  openAssistantSound = new Audio('assets/audio/abrir-asistente.mp3');
+  
   selectedImageUrl: string = '';
   imageLoaded: boolean = false;
   galleryImages: string[] = [];
@@ -30,7 +33,10 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private recipeService: RecipeService
-  ) {}
+  ) {
+    this.pageChangeSound.volume = 0.5;
+    this.openAssistantSound.volume = 0.5;
+  }
 
   ngOnInit(): void {
     this.routeSubscription = this.route.paramMap.subscribe(params => {
@@ -71,6 +77,16 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
     if (this.routeSubscription) {
       this.routeSubscription.unsubscribe();
     }
+  }
+
+  playReturnSound(): void {
+    this.pageChangeSound.currentTime = 0;
+    this.pageChangeSound.play();
+  }
+
+  playOpenAssistantSound(): void {
+    this.openAssistantSound.currentTime = 0;
+    this.openAssistantSound.play();
   }
 
   toggleStep(index: number): void {

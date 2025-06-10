@@ -1,7 +1,9 @@
 <div *ngIf="recipe" class="bg-[#fdf6e9] relative">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
     <div class="mb-4">
-      <a routerLink="/home" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-bold text-[#1c130d] bg-[#FDE6D4] hover:bg-orange-200 transition-colors">
+      <a routerLink="/home" 
+         (click)="playReturnSound()"
+         class="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-bold text-[#1c130d] bg-[#FDE6D4] hover:bg-orange-200 transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
         <span>Volver al inicio</span>
       </a>
@@ -129,7 +131,11 @@
     </div>
   </div>
 
-  <a *ngIf="recipe" [routerLink]="['/receta', recipe.slug, 'asistente']" title="Preguntar a la IA sobre esta receta" class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-16 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 overflow-hidden animate-pulse-subtle">
+  <a *ngIf="recipe" 
+     [routerLink]="['/receta', recipe.slug, 'asistente']" 
+     (click)="playOpenAssistantSound()"
+     title="Preguntar a la IA sobre esta receta" 
+     class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-16 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 overflow-hidden animate-pulse-subtle">
     <img src="assets/images/imagen_chef.webp" alt="Asistente de IA Chefsito" class="w-full h-full object-cover">
   </a>
 </div>

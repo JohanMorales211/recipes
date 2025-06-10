@@ -10,12 +10,14 @@
       routerLink="/home" 
       routerLinkActive="active-link"
       [routerLinkActiveOptions]="{exact: true}"
+      (click)="playSoundIfAllowed()"
       class="text-[#1c130d] text-sm font-medium leading-normal px-4 py-2 rounded-lg transition-colors">
       Inicio
     </a>
     <a 
       routerLink="/acerca-de"  
       routerLinkActive="active-link"
+      (click)="playSoundIfAllowed()"
       class="text-[#1c130d] text-sm font-medium leading-normal px-4 py-2 rounded-lg transition-colors">
       Acerca de
     </a>
@@ -38,14 +40,14 @@
         routerLink="/home"
         routerLinkActive="active-link"
         [routerLinkActiveOptions]="{exact: true}"
-        (click)="toggleMenu()" 
+        (click)="handleMobileNavClick()" 
         class="text-[#1c130d] text-base font-medium py-3 px-2 rounded-md">
         Inicio
       </a>
       <a 
         routerLink="/acerca-de"
         routerLinkActive="active-link"
-        (click)="toggleMenu()" 
+        (click)="handleMobileNavClick()" 
         class="text-[#1c130d] text-base font-medium py-3 px-2 rounded-md">
         Acerca de
       </a>
