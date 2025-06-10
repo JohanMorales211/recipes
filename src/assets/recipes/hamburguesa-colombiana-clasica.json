@@ -5,12 +5,15 @@
   "difficulty": "Fácil",
   "servings": "4 hamburguesas",
   "time": "30 minutos",
-  "mainImageUrl": "https://i.postimg.cc/8z2ZbJ4G/hamburguesa-clasica-main.webp",
-  "imageUrl": "https://i.postimg.cc/8z2ZbJ4G/hamburguesa-clasica-main.webp",
+  "mainImageUrl": "https://i.postimg.cc/9QnWv5yP/paso6.webp",
+  "imageUrl": "https://i.postimg.cc/9QnWv5yP/paso6.webp",
   "gallery": [
-    "https://i.postimg.cc/2jXhY1v8/hamburguesa-clasica-1.webp",
-    "https://i.postimg.cc/8P8WwRwQ/hamburguesa-clasica-2.webp",
-    "https://i.postimg.cc/0jMZb6G1/hamburguesa-clasica-3.webp"
+    "https://i.postimg.cc/htjDyPQP/paso1.webp",
+    "https://i.postimg.cc/yN3VKQTM/paso2.webp",
+    "https://i.postimg.cc/ZRkJ587C/paso3.webp",
+    "https://i.postimg.cc/FzNmj9Qv/paso4.webp",
+    "https://i.postimg.cc/KjfbfdZM/paso5.webp",
+    "https://i.postimg.cc/9QnWv5yP/paso6.webp"
   ],
   "category": "fast-food",
   "ingredients": [

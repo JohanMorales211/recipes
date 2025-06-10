@@ -19,7 +19,7 @@ export class RecipeService {
     'salchipapa-caleña',
     'ajiaco-santafereño',
     'patacones-con-hogao',
-    'pizza-casera'
+    'pizza-casera-pepperoni'
   ];
 
   private cachedRecipes: { [key: string]: Recipe } = {};
