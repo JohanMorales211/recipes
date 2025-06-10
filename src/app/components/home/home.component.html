@@ -50,7 +50,7 @@
         <h2 class="text-[#1c130d] text-xl md:text-[22px] font-bold leading-tight tracking-tight pb-3 pt-5">
           Recetas Populares
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 pb-4">
+        <div class="grid justify-center recipe-grid gap-4 sm:gap-6 pb-4">
           <div *ngFor="let recipe of popularRecipes | slice:0:(categoryExpansionState['popular'] ? popularRecipes.length : getInitialCount())" 
                class="transform transition-transform duration-300 hover:-translate-y-2">
             <app-recipe-card [recipe]="recipe"></app-recipe-card>
@@ -67,7 +67,7 @@
         <h2 class="text-[#1c130d] text-xl md:text-[22px] font-bold leading-tight tracking-tight pb-3 pt-8">
           Comidas Rápidas
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 pb-4">
+        <div class="grid justify-center recipe-grid gap-4 sm:gap-6 pb-4">
           <div *ngFor="let recipe of fastFoodRecipes | slice:0:(categoryExpansionState['fast-food'] ? fastFoodRecipes.length : getInitialCount())" 
                class="transform transition-transform duration-300 hover:-translate-y-2">
             <app-recipe-card [recipe]="recipe"></app-recipe-card>
@@ -86,7 +86,7 @@
       <h2 class="text-[#1c130d] text-xl md:text-[22px] font-bold leading-tight tracking-tight pb-3 pt-5">
         Resultados de la búsqueda
       </h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 pb-4">
+      <div class="grid justify-center recipe-grid gap-4 sm:gap-6 pb-4">
         <div *ngFor="let recipe of visibleRecipes" class="transform transition-transform duration-300 hover:-translate-y-2">
           <app-recipe-card [recipe]="recipe"></app-recipe-card>
         </div>
