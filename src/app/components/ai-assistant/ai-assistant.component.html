@@ -63,6 +63,7 @@
 
     <div class="sticky bottom-0 z-10 p-4 bg-gradient-to-t from-[#fdf6e9] via-[#fdf6e9] to-transparent">
       <div class="flex w-full items-center rounded-full bg-white shadow-lg overflow-hidden ring-1 ring-black/5">
+        
         <input 
           [(ngModel)]="userInput"
           (keyup.enter)="sendMessage()"
@@ -70,13 +71,20 @@
           [disabled]="isLoading"
           class="form-input flex-1 border-none bg-transparent focus:ring-0 text-[#191410] placeholder:text-[#9c6c49] px-5 py-3"
         />
+
         <button 
           (click)="sendMessage()"
-          class="p-2 mr-2 text-[#9c6c49] transition-colors flex items-center justify-center rounded-full"
+          title="Enviar mensaje"
+          class="p-2 mr-2 transition-colors flex items-center justify-center rounded-full"
           [disabled]="!userInput.trim() || isLoading"
-          [ngClass]="{'opacity-40 cursor-not-allowed': !userInput.trim() || isLoading, 'hover:bg-gray-100 hover:text-[#f37a24]': userInput.trim() && !isLoading}"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M221.66,133.66l-40,40a8,8,0,0,1-11.32-11.32L192,140H32a8,8,0,0,1,0-16H192l-21.66-21.66a8,8,0,0,1,11.32-11.32l40,40A8,8,0,0,1,221.66,133.66Z" transform="rotate(90 128 128) scale(-1, 1) translate(0, -256)"></path></svg>
+          [ngClass]="{
+            'text-gray-300 cursor-not-allowed': !userInput.trim() || isLoading,
+            'text-[#9c6c49] hover:text-[#f37a24] hover:bg-gray-100': userInput.trim() && !isLoading
+          }">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
         </button>
       </div>
     </div>
